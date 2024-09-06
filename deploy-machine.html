@@ -1,0 +1,1279 @@
+<html lang="en" dir="ltr" data-theme="light"
+    style="color-scheme: light; --primary-dark: 29 88 216; --primary-light: 96 142 251; --primary-lighter: 215 227 254; --primary-default: 56 114 250; --primary-foreground: 255 255 255;"
+    class="">
+<div id="in-page-channel-node-id" data-channel-name="in_page_channel_SGdY1N"></div>
+<script src="chrome-extension://nebnhfamliijlghikdgcigoebonmoibm/addToWindow.js"></script>
+
+<head>
+    <link rel="preload" as="image" href="./_next/static/media/loader.c09558b0.svg" fetchpriority="high">
+    <link rel="stylesheet" href="./_next/static/css/c068f89e88a1bec5.css" data-precedence="next">
+    <link rel="stylesheet" href="./_next/static/css/tailwindcss.css" data-precedence="next">
+    <link rel="stylesheet" href="./_next/static/css/aa15fe3776697b1b.css" data-precedence="next">
+    <link rel="stylesheet" href="./_next/static/css/bfbc09307378af05.css" data-precedence="next">
+    <link rel="preload" href="./_next/static/media/83001f47a8fdbd0d-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2">
+    <link rel="preload" href="./_next/static/media/a34f9d1faa5f3315-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2">
+    <style type="text/css">
+        :where(html[dir="ltr"]),
+        :where([data-sonner-toaster][dir="ltr"]) {
+            --toast-icon-margin-start: -3px;
+            --toast-icon-margin-end: 4px;
+            --toast-svg-margin-start: -1px;
+            --toast-svg-margin-end: 0px;
+            --toast-button-margin-start: auto;
+            --toast-button-margin-end: 0;
+            --toast-close-button-start: 0;
+            --toast-close-button-end: unset;
+            --toast-close-button-transform: translate(-35%, -35%)
+        }
+
+        :where(html[dir="rtl"]),
+        :where([data-sonner-toaster][dir="rtl"]) {
+            --toast-icon-margin-start: 4px;
+            --toast-icon-margin-end: -3px;
+            --toast-svg-margin-start: 0px;
+            --toast-svg-margin-end: -1px;
+            --toast-button-margin-start: 0;
+            --toast-button-margin-end: auto;
+            --toast-close-button-start: unset;
+            --toast-close-button-end: 0;
+            --toast-close-button-transform: translate(35%, -35%)
+        }
+
+        :where([data-sonner-toaster]) {
+            position: fixed;
+            width: var(--width);
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            --gray1: hsl(0, 0%, 99%);
+            --gray2: hsl(0, 0%, 97.3%);
+            --gray3: hsl(0, 0%, 95.1%);
+            --gray4: hsl(0, 0%, 93%);
+            --gray5: hsl(0, 0%, 90.9%);
+            --gray6: hsl(0, 0%, 88.7%);
+            --gray7: hsl(0, 0%, 85.8%);
+            --gray8: hsl(0, 0%, 78%);
+            --gray9: hsl(0, 0%, 56.1%);
+            --gray10: hsl(0, 0%, 52.3%);
+            --gray11: hsl(0, 0%, 43.5%);
+            --gray12: hsl(0, 0%, 9%);
+            --border-radius: 8px;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            outline: none;
+            z-index: 999999999
+        }
+
+        :where([data-sonner-toaster][data-x-position="right"]) {
+            right: max(var(--offset), env(safe-area-inset-right))
+        }
+
+        :where([data-sonner-toaster][data-x-position="left"]) {
+            left: max(var(--offset), env(safe-area-inset-left))
+        }
+
+        :where([data-sonner-toaster][data-x-position="center"]) {
+            left: 50%;
+            transform: translate(-50%)
+        }
+
+        :where([data-sonner-toaster][data-y-position="top"]) {
+            top: max(var(--offset), env(safe-area-inset-top))
+        }
+
+        :where([data-sonner-toaster][data-y-position="bottom"]) {
+            bottom: max(var(--offset), env(safe-area-inset-bottom))
+        }
+
+        :where([data-sonner-toast]) {
+            --y: translateY(100%);
+            --lift-amount: calc(var(--lift) * var(--gap));
+            z-index: var(--z-index);
+            position: absolute;
+            opacity: 0;
+            transform: var(--y);
+            filter: blur(0);
+            touch-action: none;
+            transition: transform .4s, opacity .4s, height .4s, box-shadow .2s;
+            box-sizing: border-box;
+            outline: none;
+            overflow-wrap: anywhere
+        }
+
+        :where([data-sonner-toast][data-styled="true"]) {
+            padding: 16px;
+            background: var(--normal-bg);
+            border: 1px solid var(--normal-border);
+            color: var(--normal-text);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px #0000001a;
+            width: var(--width);
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        :where([data-sonner-toast]:focus-visible) {
+            box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003
+        }
+
+        :where([data-sonner-toast][data-y-position="top"]) {
+            top: 0;
+            --y: translateY(-100%);
+            --lift: 1;
+            --lift-amount: calc(1 * var(--gap))
+        }
+
+        :where([data-sonner-toast][data-y-position="bottom"]) {
+            bottom: 0;
+            --y: translateY(100%);
+            --lift: -1;
+            --lift-amount: calc(var(--lift) * var(--gap))
+        }
+
+        :where([data-sonner-toast]) :where([data-description]) {
+            font-weight: 400;
+            line-height: 1.4;
+            color: inherit
+        }
+
+        :where([data-sonner-toast]) :where([data-title]) {
+            font-weight: 500;
+            line-height: 1.5;
+            color: inherit
+        }
+
+        :where([data-sonner-toast]) :where([data-icon]) {
+            display: flex;
+            height: 16px;
+            width: 16px;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+            margin-left: var(--toast-icon-margin-start);
+            margin-right: var(--toast-icon-margin-end)
+        }
+
+        :where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg {
+            opacity: 0;
+            transform: scale(.8);
+            transform-origin: center;
+            animation: sonner-fade-in .3s ease forwards
+        }
+
+        :where([data-sonner-toast]) :where([data-icon])>* {
+            flex-shrink: 0
+        }
+
+        :where([data-sonner-toast]) :where([data-icon]) svg {
+            margin-left: var(--toast-svg-margin-start);
+            margin-right: var(--toast-svg-margin-end)
+        }
+
+        :where([data-sonner-toast]) :where([data-content]) {
+            display: flex;
+            flex-direction: column;
+            gap: 2px
+        }
+
+        [data-sonner-toast][data-styled=true] [data-button] {
+            border-radius: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 24px;
+            font-size: 12px;
+            color: var(--normal-bg);
+            background: var(--normal-text);
+            margin-left: var(--toast-button-margin-start);
+            margin-right: var(--toast-button-margin-end);
+            border: none;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            transition: opacity .4s, box-shadow .2s
+        }
+
+        :where([data-sonner-toast]) :where([data-button]):focus-visible {
+            box-shadow: 0 0 0 2px #0006
+        }
+
+        :where([data-sonner-toast]) :where([data-button]):first-of-type {
+            margin-left: var(--toast-button-margin-start);
+            margin-right: var(--toast-button-margin-end)
+        }
+
+        :where([data-sonner-toast]) :where([data-cancel]) {
+            color: var(--normal-text);
+            background: rgba(0, 0, 0, .08)
+        }
+
+        :where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]) {
+            background: rgba(255, 255, 255, .3)
+        }
+
+        :where([data-sonner-toast]) :where([data-close-button]) {
+            position: absolute;
+            left: var(--toast-close-button-start);
+            right: var(--toast-close-button-end);
+            top: 0;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            background: var(--gray1);
+            color: var(--gray12);
+            border: 1px solid var(--gray4);
+            transform: var(--toast-close-button-transform);
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1;
+            transition: opacity .1s, background .2s, border-color .2s
+        }
+
+        :where([data-sonner-toast]) :where([data-close-button]):focus-visible {
+            box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003
+        }
+
+        :where([data-sonner-toast]) :where([data-disabled="true"]) {
+            cursor: not-allowed
+        }
+
+        :where([data-sonner-toast]):hover :where([data-close-button]):hover {
+            background: var(--gray2);
+            border-color: var(--gray5)
+        }
+
+        :where([data-sonner-toast][data-swiping="true"]):before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 100%;
+            z-index: -1
+        }
+
+        :where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before {
+            bottom: 50%;
+            transform: scaleY(3) translateY(50%)
+        }
+
+        :where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before {
+            top: 50%;
+            transform: scaleY(3) translateY(-50%)
+        }
+
+        :where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            transform: scaleY(2)
+        }
+
+        :where([data-sonner-toast]):after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: calc(var(--gap) + 1px);
+            bottom: 100%;
+            width: 100%
+        }
+
+        :where([data-sonner-toast][data-mounted="true"]) {
+            --y: translateY(0);
+            opacity: 1
+        }
+
+        :where([data-sonner-toast][data-expanded="false"][data-front="false"]) {
+            --scale: var(--toasts-before) * .05 + 1;
+            --y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));
+            height: var(--front-toast-height)
+        }
+
+        :where([data-sonner-toast])>* {
+            transition: opacity .4s
+        }
+
+        :where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>* {
+            opacity: 0
+        }
+
+        :where([data-sonner-toast][data-visible="false"]) {
+            opacity: 0;
+            pointer-events: none
+        }
+
+        :where([data-sonner-toast][data-mounted="true"][data-expanded="true"]) {
+            --y: translateY(calc(var(--lift) * var(--offset)));
+            height: var(--initial-height)
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]) {
+            --y: translateY(calc(var(--lift) * -100%));
+            opacity: 0
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]) {
+            --y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));
+            opacity: 0
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]) {
+            --y: translateY(40%);
+            opacity: 0;
+            transition: transform .5s, opacity .2s
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="false"]):before {
+            height: calc(var(--initial-height) + 20%)
+        }
+
+        [data-sonner-toast][data-swiping=true] {
+            transform: var(--y) translateY(var(--swipe-amount, 0px));
+            transition: none
+        }
+
+        [data-sonner-toast][data-swipe-out=true][data-y-position=bottom],
+        [data-sonner-toast][data-swipe-out=true][data-y-position=top] {
+            animation: swipe-out .2s ease-out forwards
+        }
+
+        @keyframes swipe-out {
+            0% {
+                transform: translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount)));
+                opacity: 1
+            }
+
+            to {
+                transform: translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount) + var(--lift) * -100%));
+                opacity: 0
+            }
+        }
+
+        @media (max-width: 600px) {
+            [data-sonner-toaster] {
+                position: fixed;
+                --mobile-offset: 16px;
+                right: var(--mobile-offset);
+                left: var(--mobile-offset);
+                width: 100%
+            }
+
+            [data-sonner-toaster] [data-sonner-toast] {
+                left: 0;
+                right: 0;
+                width: calc(100% - var(--mobile-offset) * 2)
+            }
+
+            [data-sonner-toaster][data-x-position=left] {
+                left: var(--mobile-offset)
+            }
+
+            [data-sonner-toaster][data-y-position=bottom] {
+                bottom: 20px
+            }
+
+            [data-sonner-toaster][data-y-position=top] {
+                top: 20px
+            }
+
+            [data-sonner-toaster][data-x-position=center] {
+                left: var(--mobile-offset);
+                right: var(--mobile-offset);
+                transform: none
+            }
+        }
+
+        [data-sonner-toaster][data-theme=light] {
+            --normal-bg: #fff;
+            --normal-border: var(--gray4);
+            --normal-text: var(--gray12);
+            --success-bg: hsl(143, 85%, 96%);
+            --success-border: hsl(145, 92%, 91%);
+            --success-text: hsl(140, 100%, 27%);
+            --info-bg: hsl(208, 100%, 97%);
+            --info-border: hsl(221, 91%, 91%);
+            --info-text: hsl(210, 92%, 45%);
+            --warning-bg: hsl(49, 100%, 97%);
+            --warning-border: hsl(49, 91%, 91%);
+            --warning-text: hsl(31, 92%, 45%);
+            --error-bg: hsl(359, 100%, 97%);
+            --error-border: hsl(359, 100%, 94%);
+            --error-text: hsl(360, 100%, 45%)
+        }
+
+        [data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true] {
+            --normal-bg: #000;
+            --normal-border: hsl(0, 0%, 20%);
+            --normal-text: var(--gray1)
+        }
+
+        [data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true] {
+            --normal-bg: #fff;
+            --normal-border: var(--gray3);
+            --normal-text: var(--gray12)
+        }
+
+        [data-sonner-toaster][data-theme=dark] {
+            --normal-bg: #000;
+            --normal-border: hsl(0, 0%, 20%);
+            --normal-text: var(--gray1);
+            --success-bg: hsl(150, 100%, 6%);
+            --success-border: hsl(147, 100%, 12%);
+            --success-text: hsl(150, 86%, 65%);
+            --info-bg: hsl(215, 100%, 6%);
+            --info-border: hsl(223, 100%, 12%);
+            --info-text: hsl(216, 87%, 65%);
+            --warning-bg: hsl(64, 100%, 6%);
+            --warning-border: hsl(60, 100%, 12%);
+            --warning-text: hsl(46, 87%, 65%);
+            --error-bg: hsl(358, 76%, 10%);
+            --error-border: hsl(357, 89%, 16%);
+            --error-text: hsl(358, 100%, 81%)
+        }
+
+        [data-rich-colors=true][data-sonner-toast][data-type=success],
+        [data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button] {
+            background: var(--success-bg);
+            border-color: var(--success-border);
+            color: var(--success-text)
+        }
+
+        [data-rich-colors=true][data-sonner-toast][data-type=info],
+        [data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button] {
+            background: var(--info-bg);
+            border-color: var(--info-border);
+            color: var(--info-text)
+        }
+
+        [data-rich-colors=true][data-sonner-toast][data-type=warning],
+        [data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button] {
+            background: var(--warning-bg);
+            border-color: var(--warning-border);
+            color: var(--warning-text)
+        }
+
+        [data-rich-colors=true][data-sonner-toast][data-type=error],
+        [data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button] {
+            background: var(--error-bg);
+            border-color: var(--error-border);
+            color: var(--error-text)
+        }
+
+        .sonner-loading-wrapper {
+            --size: 16px;
+            height: var(--size);
+            width: var(--size);
+            position: absolute;
+            inset: 0;
+            z-index: 10
+        }
+
+        .sonner-loading-wrapper[data-visible=false] {
+            transform-origin: center;
+            animation: sonner-fade-out .2s ease forwards
+        }
+
+        .sonner-spinner {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            height: var(--size);
+            width: var(--size)
+        }
+
+        .sonner-loading-bar {
+            animation: sonner-spin 1.2s linear infinite;
+            background: var(--gray11);
+            border-radius: 6px;
+            height: 8%;
+            left: -10%;
+            position: absolute;
+            top: -3.9%;
+            width: 24%
+        }
+
+        .sonner-loading-bar:nth-child(1) {
+            animation-delay: -1.2s;
+            transform: rotate(.0001deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(2) {
+            animation-delay: -1.1s;
+            transform: rotate(30deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(3) {
+            animation-delay: -1s;
+            transform: rotate(60deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(4) {
+            animation-delay: -.9s;
+            transform: rotate(90deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(5) {
+            animation-delay: -.8s;
+            transform: rotate(120deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(6) {
+            animation-delay: -.7s;
+            transform: rotate(150deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(7) {
+            animation-delay: -.6s;
+            transform: rotate(180deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(8) {
+            animation-delay: -.5s;
+            transform: rotate(210deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(9) {
+            animation-delay: -.4s;
+            transform: rotate(240deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(10) {
+            animation-delay: -.3s;
+            transform: rotate(270deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(11) {
+            animation-delay: -.2s;
+            transform: rotate(300deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(12) {
+            animation-delay: -.1s;
+            transform: rotate(330deg) translate(146%)
+        }
+
+        @keyframes sonner-fade-in {
+            0% {
+                opacity: 0;
+                transform: scale(.8)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        @keyframes sonner-fade-out {
+            0% {
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(.8)
+            }
+        }
+
+        @keyframes sonner-spin {
+            0% {
+                opacity: 1
+            }
+
+            to {
+                opacity: .15
+            }
+        }
+
+        @media (prefers-reduced-motion) {
+
+            [data-sonner-toast],
+            [data-sonner-toast]>*,
+            .sonner-loading-bar {
+                transition: none !important;
+                animation: none !important
+            }
+        }
+
+        .sonner-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform-origin: center;
+            transition: opacity .2s, transform .2s
+        }
+
+        .sonner-loader[data-visible=false] {
+            opacity: 0;
+            transform: scale(.8) translate(-50%, -50%)
+        }
+    </style>
+    <style id="_goober">
+        @keyframes go2264125279 {
+            from {
+                transform: scale(0) rotate(45deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) rotate(45deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes go3020080000 {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes go463499852 {
+            from {
+                transform: scale(0) rotate(90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) rotate(90deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes go1268368563 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes go1310225428 {
+            from {
+                transform: scale(0) rotate(45deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) rotate(45deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes go651618207 {
+            0% {
+                height: 0;
+                width: 0;
+                opacity: 0;
+            }
+
+            40% {
+                height: 0;
+                width: 6px;
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+                height: 10px;
+            }
+        }
+
+        @keyframes go901347462 {
+            from {
+                transform: scale(0.6);
+                opacity: 0.4;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .go4109123758 {
+            z-index: 9999;
+        }
+
+        .go4109123758>* {
+            pointer-events: auto;
+        }
+    </style>
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-black-text.9d9ee0fe.png&amp;w=256&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-black-text.9d9ee0fe.png&amp;w=384&amp;q=75 2x">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-white-text.8d6728a5.png&amp;w=256&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-white-text.8d6728a5.png&amp;w=384&amp;q=75 2x">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black-text.c0a8563c.png&amp;w=64&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black-text.c0a8563c.png&amp;w=128&amp;q=75 2x">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white-text.2028aec7.png&amp;w=64&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white-text.2028aec7.png&amp;w=128&amp;q=75 2x">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>PCRental - Deploy Multiple Machine</title>
+    <meta name="description"
+        content="PCRental is a platform that allows you to rent a PC for a certain period of time. You can rent a PC for a day, a week, or even a month. We have a wide range of PCs to choose from. You can choose the one that suits your needs and budget.">
+    <meta name="next-size-adjust">
+</head>
+
+<body class="__variable_36bd41 __variable_e53e8d font-inter hidden-scrollbar">
+    <script>!function () { try { var d = document.documentElement, n = 'data-theme', s = 'setAttribute'; var e = localStorage.getItem('theme'); if (e) { d[s](n, e || '') } else { d[s](n, 'light'); } if (e === 'light' || e === 'dark' || !e) d.style.colorScheme = e || 'light' } catch (t) { } }();</script>
+    <script src="./_next/static/chunks/webpack-11a257b9ba60ffc0.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"./_next/static/media/83001f47a8fdbd0d-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"./_next/static/media/a34f9d1faa5f3315-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"./_next/static/css/c068f89e88a1bec5.css\",\"style\"]\n4:HL[\"./_next/static/css/tailwindcss.css\",\"style\"]\n5:HL[\"./_next/static/css/aa15fe3776697b1b.css\",\"style\"]\n6:HL[\"./_next/static/css/bfbc09307378af05.css\",\"style\"]\n"])</script>
+    <script>self.__next_f.push([1, "7:I[95751,[],\"\"]\n9:I[22636,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6950\",\"static/chunks/f8025e75-c12d9028c3a2e8dc.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"8767\",\"static/chunks/8767-774ff19c2dae9cbb.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"7239\",\"static/chunks/app/workspace/(main-layout)/page-14cab9fbfcf81d73.js\"],\"default\"]\na:I[68264,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6950\",\"static/chunks/f8025e75-c12d9028c3a2e8dc.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"7240\",\"static/chunks/53c13509-4829a66284374d06.js\",\"5358\",\"static/chunks/455bf8ed-0d7fb7e7fe86e16a.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"94"])</script>
+    <script>self.__next_f.push([1, "86\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"3697\",\"static/chunks/3697-1e7dcd68c3810251.js\",\"3616\",\"static/chunks/3616-8ad5f72d5b3a9d5e.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"2196\",\"static/chunks/2196-0ee2f85de98095c8.js\",\"7754\",\"static/chunks/app/workspace/(main-layout)/layout-fb3f268ad8111c48.js\"],\"default\"]\nb:I[39275,[],\"\"]\nc:I[61343,[],\"\"]\nd:I[85703,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"7899\",\"static/chunks/7899-2fb7608f0cec0ea2.js\",\"2221\",\"static/chunks/2221-8f0bb3e71384a374.js\",\"342\",\"static/chunks/app/workspace/layout-7bfb2b9bbe0abc9d.js\"],\"default\"]\n11:I[76130,[],\"\"]\ne:{}\n12:[]\n0:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"./_next/static/css/c068f89e88a1bec5.css\",\"precedence\":\"next\",\"crossOrig"])</script>
+    <script>self.__next_f.push([1, "in\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"./_next/static/css/tailwindcss.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L7\",null,{\"buildId\":\"pD1XQo6p1Wwgul1iw879W\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/workspace\",\"initialTree\":[\"\",{\"children\":[\"workspace\",{\"children\":[\"(main-layout)\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"workspace\",{\"children\":[\"(main-layout)\",{\"children\":[\"__PAGE__\",{},[[\"$L8\",[\"$\",\"$L9\",null,{}]],null],null]},[[\"$\",\"$La\",null,{\"children\":[\"$\",\"$Lb\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"workspace\",\"children\",\"(main-layout)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"styles\":null}],\"params\":{}}],null],null]},[[\"$\",\"$Ld\",null,{\"children\":[\"$\",\"$Lb\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"workspace\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"styles\":[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"./_next/static/css/bfbc09307378af05.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]]}],\"params\":\"$e\"}],null],null]},[\"$Lf\",null],null],\"couldBeIntercepted\":false,\"initialHead\":[false,\"$L10\"],\"globalErrorComponent\":\"$11\",\"missingSlots\":\"$W12\"}]]\n"])</script>
+    <script>self.__next_f.push([1, "10:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"PCRental - Workspace\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"PCRental is a platform that allows you to rent a PC for a certain period of time. You can rent a PC for a day, a week, or even a month. We have a wide range of PCs to choose from. You can choose the one that suits your needs and budget.\"}],[\"$\",\"meta\",\"4\",{\"name\":\"next-size-adjust\"}]]\n8:null\n"])</script>
+    <script>self.__next_f.push([1, "13:I[46629,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"ThemeProvider\"]\n14:I[63874,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d3499"])</script>
+    <script>self.__next_f.push([1, "15ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n15:I[90020,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chu"])</script>
+    <script>self.__next_f.push([1, "nks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\nf:[\"$\",\"html\",null,{\"lang\":\"en\",\"dir\":\"ltr\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"suppressHydrationWarning\":true,\"className\":\"__variable_36bd41 __variable_e53e8d font-inter hidden-scrollbar\",\"children\":[\"$\",\"$L13\",null,{\"children\":[\"$\",\"$L14\",null,{\"session\":{\"user\":{\"name\":\"puharocuhou2\",\"email\":\"puharocuhou-4162@yopmail.com\",\"image\":\"$undefined\"},\"jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wY3JlbnRhbC5uZXQvYXBpL3VzZXIvbG9naW4iLCJpYXQiOjE3MjU1NDAwMTEsImV4cCI6MTcyODEzMjAxMSwibmJmIjoxNzI1NTQwMDExLCJqdGkiOiJ0QldrdGl5Z08xcDQ5d3hLIiwic3ViIjoiMTIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwidXNlcl9pZCI6ImJjMGQwNWEyLTU0OTUtNGI3YS04NDg1LTI3MGI2ZTkxMjJiYyIsInVzZXJuYW1lIjoicHVoYXJvY3Vob3UyIiwiZW1haWwiOiJwdWhhcm9jdWhvdS00MTYyQHlvcG1haWwuY29tIn0.0YPMQcCQp5K3wNDEm9E5NXQlDuUlrrXj_kgo19LcOQ8\"},\"children\":[\"$\",\"$L15\",null,{\"children\":\"$L16\"}]}]}]}]}]\n"])</script>
+    <script>self.__next_f.push([1, "17:I[12612,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n18:I[60094,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab37"])</script>
+    <script>self.__next_f.push([1, "3da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n19:I[24333,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/10"])</script>
+    <script>self.__next_f.push([1, "29-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"SocketProvider\"]\n1a:I[77072,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n1b:I[62417,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792"])</script>
+    <script>self.__next_f.push([1, "ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"UploadInstanceProvider\"]\n1c:I[55713,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"st"])</script>
+    <script>self.__next_f.push([1, "atic/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n1d:I[231,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"9160\",\"static/chunks/app/not-found-928d1f8130adf87e.js\"],\"\"]\n1e:I[38173,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"9160\",\"static/chunks/app/not-found-928d1f8130adf87e.js\"],\"Image\"]\n1f:I[30390,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"9160\",\"static/chunks/app/not-found-928d1f8130adf87e.js\"],\"Title\"]\n20:I[30390,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"9160\",\"static/chunks/app/not-found-928d1f8130adf87e.js\"],\"Button\"]\n21:I[88726,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\","])</script>
+    <script>self.__next_f.push([1, "\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"Toaster\"]\n22:I[96506,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/10"])</script>
+    <script>self.__next_f.push([1, "14-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n23:I[93079,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n24:I[56668,[\"2864\",\"static/chunks/cf87ef27"])</script>
+    <script>self.__next_f.push([1, "-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"default\"]\n25:I[27776,[\"2864\",\"static/chunks/cf87ef27-552504aa4e8e95ec.js\",\"7142\",\"static/chunks/109f1dee-5c1a0f29a81ec771.js\",\"3665\",\"static/chunks/f97e080b-5d0b565af87a191b.js\",\"8218\",\"static/chunks/aaea2bcf-784ad641c702502f.js\",\"6990\",\"static/chunks/13b76428-5a68792917164904.js\",\"9857\",\"static/chunks/b13aaa8a-e0b5be21d9389463.js\",\"9612\",\"static/chunks/b3f72c30-ed8efd5d3e5792ab.js\",\"9870\",\"static/chunks/9870-23f968ba0aec1058.js\",\"8173\",\"static/chunks/8173-6dd52840ea57fb81.js\",\"6164\",\"static/chunks/6164-50c1478e08d449fd.js\",\"4480\",\"static/chunks/4480-452702b40a40a751.js\",\"231\",\"static/chunks/231-63d349915ab373da.js\",\"6907\",\"static/chunks/6907-de638e1"])</script>
+    <script>self.__next_f.push([1, "e6622a43d.js\",\"6315\",\"static/chunks/6315-f0ec56c8cbcad674.js\",\"9486\",\"static/chunks/9486-ef57b5634c3df310.js\",\"6176\",\"static/chunks/6176-12a8ecaf988c80c7.js\",\"9772\",\"static/chunks/9772-eb3a570952e70bd4.js\",\"1014\",\"static/chunks/1014-76def35fd1e88dcb.js\",\"5524\",\"static/chunks/5524-f2adebd1e1dd6d68.js\",\"1444\",\"static/chunks/1444-adf55175781aaab8.js\",\"3742\",\"static/chunks/3742-a2921f214b5ae862.js\",\"8247\",\"static/chunks/8247-fdc96d84a6be47ff.js\",\"4999\",\"static/chunks/4999-ab2393813182cc53.js\",\"616\",\"static/chunks/616-5cf60d04c24bf50d.js\",\"1029\",\"static/chunks/1029-a7a07fd81826094f.js\",\"4251\",\"static/chunks/4251-870e854f2ffd6eef.js\",\"65\",\"static/chunks/65-955de36777338d8b.js\",\"7072\",\"static/chunks/7072-8d5929e05fc788b4.js\",\"3185\",\"static/chunks/app/layout-0040560c43f0d5e5.js\"],\"Toaster\"]\n"])</script>
+    <script>self.__next_f.push([1, "16:[\"$\",\"$L17\",null,{\"locale\":\"en\",\"now\":\"$D2024-09-05T12:53:13.407Z\",\"timeZone\":\"UTC\",\"messages\":{\"navigation\":{\"product-group\":{\"title\":\"Product\",\"dashboard\":\"Dashboard\",\"file-manager\":\"Storage\",\"machine-manager-group\":{\"title\":\"Machines\",\"all-machines\":\"All Machines\",\"standalone-machines\":\"Standalone Machines\",\"machine-groups\":\"Machine Group\"},\"application-group\":{\"title\":\"Applications\",\"predefined-templates\":\"Application presets\",\"predefined-create\":\"Create New Template\"},\"storage-credentials\":\"Storage Credentials\"},\"account-group\":{\"title\":\"Account\",\"profile\":\"Profile\",\"account-settings-group\":{\"title\":\"Account Settings\",\"basic-info\":\"Basic Information\",\"billing-info\":\"Billing Information\",\"security\":\"Security\",\"teams\":\"Teams\"}},\"payments-group\":{\"title\":\"Payments\",\"balance\":\"Account Balance\",\"top-up\":\"Top-Up\",\"usage-limit\":\"Usage Limit\",\"invoices\":\"Invoices\"},\"support-group\":{\"title\":\"Support\"},\"quick-access\":{\"title\":\"Quick access...\",\"search-placeholder\":\"Search features here\",\"clear\":\"Clear\",\"no-result-found\":\"No Result Found\"}},\"metadata\":{\"workspace\":\"PCRental - Workspace\",\"files-manager\":\"PCRental - Files Manager\",\"machine-list\":\"PCRental - Machine List\",\"machine-detail\":\"PCRental - Machine Detail\",\"machine-group-list\":\"PCRental - Machine Group List\",\"machine-group-detail\":\"PCRental - Machine Group Detail\",\"deploy-single-machine\":\"PCRental - Deploy Single Machine\",\"deploy-multiple-machine\":\"PCRental - Deploy Multiple Machine\",\"deploy-multiple-machine-append\":\"PCRental - Deploy More Machine To Machine Group\",\"application-presets\":\"PCRental - Application Presets\",\"application-preset-detail\":\"PCRental - Application Preset Detail\",\"account-settings\":\"PCRental - Account Settings\",\"billing-account\":\"PCRental - Billing Account\",\"security\":\"PCRental - Security Settings\",\"team\":\"PCRental - Team Manager\",\"sftp\":\"PCRental - S3 Credentials Manager\",\"balance\":\"PCRental - Account Balance\",\"invoice\":\"PCRental - Invoices\",\"invoice-detail\":\"PCRental - Invoice Detail\",\"sign-in\":\"PCRental - Sign In\",\"sign-up\":\"PCRental - Sign Up\"},\"dashboard\":{\"welcome-card-title\":\"Welcome\",\"welcome-card-content\":\"Welcome to PCRental, start experiencing our services right now!\",\"deploy-machine\":\"Deploy machine\",\"select-a-team-to-continue\":\"Select a team to continue\",\"first-logon-multiple-teams-subtitle\":\"You are a member of multiple teams. Please select a team to continue.\",\"machine-state\":{\"title\":\"Machine State\",\"running\":\"Running\",\"deploying\":\"Deploying\"},\"running-machines\":\"Running machines:\",\"stopped-machines\":\"Turned off machines:\",\"deploying-machines\":\"Deploying machines:\",\"total-machines\":\"Total machiness:\",\"monthly-expenditure\":\"Monthly Expenditure\",\"details\":\"Details\",\"expenditure\":{\"title\":\"expenditure\",\"3-day\":\"3D\",\"1-week\":\"1W\",\"2-week\":\"2W\",\"3-week\":\"3W\",\"1-month\":\"1M\"},\"error\":{\"billing-information-not-available\":\"Missing Billing Information\",\"resource-access-forbidden\":\"Don't Have Permission\"}},\"common\":{\"teams\":\"Teams\",\"default-team\":\"Default\",\"profile-dropdown-create-new-team\":\"Create new team\",\"profile-dropdown-logout\":\"Logout\",\"profile-dropdown-sign-out\":\"Sign out\",\"profile-dropdown-profile\":\"My profile\",\"profile-dropdown-settings\":\"Settings\",\"profile-dropdown-team\":\"Team settings\",\"switching-default-team\":\"Switched to default team\",\"switching-team\":\"Switched to team: {team}\",\"yes\":\"Yes\",\"no\":\"No\"},\"signIn\":{\"welcome-back\":\"Welcome back!\",\"sign-in-title-2\":\"Sign in with your credentials\",\"remember-me\":\"Remember me\",\"enter-your-password\":\"Enter your password\",\"enter-your-email\":\"Enter your email\",\"forget-password\":\"Forget Password?\",\"dont-have-an-account\":\"Don’t have an account?\",\"sign-up\":\"Sign Up\",\"sign-in-btn\":\"Sign in\",\"separate-form-label\":\"Or, sign {action} with your email\",\"email\":\"Email\",\"password\":\"Password\",\"sign-in-key\":\"in\",\"sign-up-key\":\"up\",\"login\":\"Login\",\"other-auth\":{\"sign-in-with\":\"Signin with\"}},\"signUp\":{\"title\":\"Join us today! Get special benefits and stay up-to-date.\",\"email\":\"Email\",\"username\":\"Username\",\"password\":\"Password\",\"confirm-password\":\"Confirm password\",\"enter-email\":\"Enter your email\",\"enter-username\":\"Enter your username\",\"enter-password\":\"Enter your password\",\"enter-confirm-password\":\"Confirm your password\",\"aggree-to-our-terms-and-policies-1\":\"By signing up you have agreed to our\",\"term\":\"Term\",\"privacy-policies\":\"Privacy Policy\",\"aggree-to-our-terms-and-policies-2\":\"Our\",\"create-account-btn\":\"Create account\",\"already-have-an-account\":\"Already have an account?\",\"sign-in\":\"Sign In\"},\"otpForm\":{\"otp-sent\":\"OTP has been sent to\",\"resend-otp\":\"Resend OTP\",\"verify-otp\":\"Verify OTP\",\"loading-parse-token\":\"Loading parse token...\"},\"forgot-password\":{\"title\":\"Having trouble to sign in?\\nReset your password.\",\"sent-email\":\"Reset password email with instructions was sent to email \u003cemailChunk\u003e{email}\u003c/emailChunk\u003e\",\"enter-your-email\":\"Enter your email\",\"send-reset-link\":\"Sent Reset Link\",\"sent-reset-link-successfully\":\"Reset link sent to email: \u003cemailChunk\u003e{email}\u003c/emailChunk\u003e\",\"something-went-wrong\":\"Something went wrong\",\"back-to-sign-in\":\"Back to \u003clink\u003eSign In\u003c/link\u003e page\",\"reset-password\":{\"title\":\"Enter your new password\\nto reset your password.\",\"new-password\":\"New password\",\"enter-new-password\":\"Enter your new password\",\"confirm-new-password\":\"Confirm new password\",\"enter-confirm-new-password\":\"Re-enter your new password\",\"reset-password\":\"Reset Password\",\"reset-password-successfully\":\"Your password has been reset successfully. Please sign in with your new password.\",\"something-went-wrong\":\"Something went wrong\",\"link-expired\":\"Link expired\",\"invalid-token\":\"Invalid reset token\",\"back-to-sign-in\":\"Back to \u003clink\u003eSign In\u003c/link\u003e page\"}},\"footer-menu\":{\"help\":\"Help\",\"privacy\":\"Privacy\",\"terms\":\"Terms\"},\"files-manager\":{\"files-manager-label\":\"Files Manager\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Files Manager\",\"file-list-table\":{\"upload-file-btn\":\"Upload files / folder\",\"file-type-filter\":\"File types\",\"search-placeholder\":\"Search for files/folders...\",\"clear-filter\":\"Clear\",\"header\":{\"name\":\"Name\",\"size\":\"Size\",\"type\":\"Type\",\"modified\":\"Modified\"},\"pagination\":{\"items-per-page\":\"Rows per page\"},\"empty-text\":{\"empty\":\"Empty folder\",\"not-found-match-keyword\":\"No file/folder found matching the keyword:\",\"not-found-match-filter\":\"No file/folder found matching the selected filter\"},\"error\":\"Something went wrong, try again\",\"download\":\"Download\",\"delete\":\"Delete\",\"file-or-folder\":\"File/Folder\",\"files-or-folders\":\"Files/Folders\"},\"upload-folder\":\"Upload folder\",\"create-folder\":\"Create new folder\",\"modal\":{\"upload\":{\"title\":\"Upload files and folders\",\"upload\":\"Upload\",\"please-select-file-and-folder\":\"Please select file and folder before upload\",\"output-upload-not-allowed\":\"Uploading files/folders to the output drive is not allowed\",\"preview-helper\":\"You're about to uploading file/folder, review your upload session before starts\",\"start-upload\":\"Start upload\",\"reset\":\"Reset\"},\"create-folder\":{\"title\":\"Create folder\",\"enter-folder-name\":\"Enter folder name\",\"create\":\"Create\",\"cancel\":\"Cancel\",\"folder-created-successfully\":\"Folder created successfully\",\"folder-creation-failed\":\"Folder created failed\"}},\"helper\":{\"drive-structure\":\"Here's a description of the file and folder structure available on each of your machines:\",\"os-drive-description\":\"This drive contains the operating system. No modifications are allowed.\",\"software-drive-description\":\"This drive holds various types of software. You can install the software you need from this drive, but only \u003chightlight\u003e\\\"read\\\"\u003c/hightlight\u003e access is permitted.\",\"input-drive-description\":\"This drive is used for storing your input files and folders. You can upload new files and folders here, and they will be downloaded to your machines in real time.\",\"output-drive-description\":\"This drive contains your output files and folders. Any new files or folders added here will be uploaded to the website for you to download.\"}},\"account-settings\":{\"personal-information-tab\":\"Personal information\",\"billing-information-tab\":\"Billing\",\"security-tab\":\"Security\",\"teams-tab\":\"Teams\",\"account-settings-label\":\"Account Settings\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Account\",\"personal-info\":\"Personal Info\",\"update-your-personal-details-here\":\"Update your personal details here\",\"name\":\"Name\",\"first-name\":\"First Name\",\"last-name\":\"Last Name\",\"email-address\":\"Email Address\",\"language\":\"Language\",\"language-list\":{\"en\":\"English\",\"vi\":\"Vietnamese\"},\"country\":\"Country\",\"select-country\":\"Select country\",\"search-country-placeholder\":\"Search...\",\"timezone\":\"Timezone\",\"cancel\":\"Cancel\",\"save\":\"Save\",\"your_username\":\"@your_username\",\"successfully-updated\":\"Updates profile successfully\",\"failed-update\":\"Updates personal information failed\",\"billing\":{\"title\":\"Billing information\",\"required\":\"Please provide your billing information to continue using our services\",\"description\":\"Update your billing information here\",\"label-description\":\"Create a display name for your billing information and invoices. This name should be either your own name or your company's name.\",\"name-description\":\"Your name must match the name on the credit card you use to pay for your account.\",\"your-name\":\"Your name\",\"label\":\"Label\",\"email-placeholder\":\"georgia.washington@example.com\",\"country\":\"Country\",\"address\":\"Address\",\"city\":\"City\",\"state\":\"State\",\"details-address\":\"Street address\",\"zip\":\"ZIP / Postcode\",\"enter-vat-number\":\"Please enter your VAT number here.\",\"vat-number\":\"VAT number\",\"autoflll-address-description\":\"We have automatically filled in some fields through your IP address, you can check the information again.\",\"failed-update\":\"Updates billing information failed\"},\"security\":{\"machine\":\"Machine\",\"get-machine-password-here\":\"Get your machine password here\",\"password-label\":\"Password (read-only)\",\"copy-password-tooltip\":\"Copy Password\",\"copied-password-response\":\"Password copied to clipboard\",\"user-account\":\"User Account\",\"update-password-here\":\"Update your password here\",\"current-password-label\":\"Current Password\",\"current-password-placeholder\":\"Enter your current password\",\"new-password-label\":\"New Password\",\"new-password-placeholder\":\"Enter new password\",\"confirm-new-password-label\":\"Confirm New Password\",\"confirm-new-password-placeholder\":\"Confirm new password\",\"cancel\":\"Cancel\",\"update-password\":\"Update Password\",\"update-password-success\":\"Update password successfully\"},\"teams\":{\"manage-your-teams\":\"Manage your teams\",\"copy-team-uuid-tooltip\":\"Copy Team UUID\",\"copied-team-uuid-response\":\"Team UUID copied to clipboard\",\"pending-invitation\":\"Pending invitations\",\"add-member\":\"Invite member\",\"team-member-table\":{\"header\":{\"name\":\"Name\",\"status\":\"Status\",\"email-address\":\"Email address\",\"role\":\"Role\",\"actions\":\"Actions\"},\"role\":{\"owner\":\"Owner\",\"admin\":\"Administrator\",\"member\":\"Member\"},\"pagination\":{\"items-per-page\":\"Members per page\"}},\"remove-confirm\":{\"title\":\"Remove Member\",\"message-1\":\" Are you sure to delete\",\"message-2\":\"from the team?\",\"yes\":\"Yes\",\"no\":\"No\"},\"leave-confirm\":{\"title\":\"Leave Team\",\"message\":\" Are you sure to leave this team?\",\"yes\":\"Yes\",\"no\":\"No\"},\"on-teams\":\"On Teams\",\"youre-currently-on-these-teams\":\"You’re currently on these teams.\",\"current-team\":\"Current team\",\"leave-team\":\"Leave team\",\"remove\":\"Remove member\",\"successfully-added\":\"Successfully added\",\"successfully-removed-member\":\"Removed member successfully\",\"successfully-leave-team\":\"Leave group successfully\",\"failed-to-remove-member\":\"Failed to remove member\",\"failed-to-leave-teanm\":\"Failed to leave group\",\"failed-to-leave-team\":\"Failed to leave team\"},\"phone\":\"Phone\",\"phone-description\":\"Please enter your phone number here.\",\"email-address-description\":\"An email address to receives payment invoices from payment gateway.\",\"vat\":\"VAT\"},\"team\":{\"create-team\":\"Create new team\",\"enter-team-name\":\"Enter team name\",\"team-name\":\"Team name\",\"basic-information\":\"Basic information\",\"role\":{\"title\":\"Role\",\"owner\":\"Owner\",\"admin\":\"Administrator\",\"member\":\"Member\"},\"invitation-message\":\"Invitation Message\",\"description\":\"Description\",\"team-avatar\":\"Team avatar\",\"upload-an-avatar-for-your-team\":\"Upload an avatar for your team\",\"team-create-description\":\"Your team name and description will be visible to everyone in your workspace. Team slug: {link}\",\"add-new-member\":\"Invite your teammate\",\"invite-member\":\"Invite Member\",\"cancel\":\"Cancel\",\"an-invitation-email-will-be-sent-to-the-new-team-member\":\"An invitation email will be sent to the new team member.\",\"pending-invitations-to-join-the-team\":\"Pending invitations to join the team\",\"from\":\"From\",\"resend\":\"Resend\",\"revoke-invitation\":\"Revoke Invitation\",\"empty-pending-invitation\":\"No pending invitation\"},\"modal\":{\"create-team\":{\"create-new-team\":\"Create new team\",\"create-team\":\"Create team\",\"team-name\":\"Team Name *\",\"enter-your-team-name\":\"Enter your team name\",\"enter-your-team-description\":\"Enter your team description\",\"description\":\"Description *\",\"upload-new-team-avatar\":\"Upload new team avatar\"},\"create-teamdescription\":\"Description *\",\"deploy-machine-present\":{\"deploy-new-machine\":\"Deploy machine\",\"we-have-two-basic-options-for-you-to-deploy-a-new-machine-or-a-cluster-of-machines\":\"We have two basic options for you to deploy a new machine or a cluster of machines.\",\"single-machine\":\"Single machine\",\"deploy-single-content\":\"Deploy a single, best machine for your needs, we will choose the best machine type and region for you.\",\"multiple-machine-title\":\"Multiple machine\",\"multiple-machine-content\":\"Deploy multiple machines, a cluster of machine has same configuration or a render farm.\",\"aws-deadline-cluster\":\"AWS Deadline Cluster\",\"recent-cluster-configuration\":\"Recent cluster configuration\"},\"save-preset\":{\"save-as-preset\":\"Save as preset\",\"estimate\":\"Estimated time\",\"create-preset\":\"Create preset\",\"create-successfully\":\"Create preset successfully\"},\"related-softwares\":{\"title\":\"Related software\"}},\"machine-list\":{\"all\":{\"machine-list-label\":\"Machine List\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Machine List\"},\"standalone\":{\"machine-list-label\":\"Standalone Machine List\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Standalone Machine List\"},\"group\":{\"machine-group-label\":\"Machine Group List\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Machine Group\"},\"group-detail\":{\"machine-group-detail-label\":\"Machine Group Detail\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Machine Group\",\"breadcrumb-subsubmenu\":\"Machine Group Detail\"},\"state\":{\"running\":\"Running\",\"failed\":\"Failed\",\"deploying\":\"Deploying\"},\"deploy-machine\":\"Deploy machine\",\"deploy-machine-content\":\"Deploy a single, best machine for your needs, we will choose the best machine type and region for you.\",\"deploy-multiple-machine\":\"Deploy multiple machine\",\"deploy-multiple-machine-content\":\"Deploy multiple machines, a cluster of machine has same configuration or a render farm.\",\"add-machine-to-group\":\"Deploy more machine on this group\",\"machine-layout-list\":{\"search-placeholder\":\"Search for machines...\",\"header\":{\"name\":\"Machine Name\",\"deployed-by\":\"Deployed by\",\"cost\":\"Cost\",\"creation-date\":\"Creation Date\",\"state\":\"State\",\"action\":\"Actions\"},\"machine\":\"Machine\",\"creation-date\":\"Creation date\",\"created-at\":\"Created at\",\"next-charge\":\"Next charge\",\"next-charge-at\":\"Charge at\",\"copy-machine-uuid-tooltip\":\"Copy Machine UUID\",\"copy-machine-group-uuid-tooltip\":\"Copy Machine Group UUID\",\"copied-machine-uuid-response\":\"Machine UUID copied to clipboard\",\"copied-machine-group-uuid-response\":\"Machine Group UUID copied to clipboard\",\"view-detail\":\"View machine detail\",\"pagination\":{\"items-per-page\":\"Machines per page\"},\"empty-text\":{\"empty\":\"You have no machine yet\",\"empty-group\":\"You have no machine in this group\",\"not-found-match-keyword\":\"No machine found matching the keyword:\",\"group-not-found\":\"Machine Group Not Found\"},\"error\":\"Something went wrong, try again\"},\"machine-layout-grid\":{\"search-placeholder\":\"Search for machines...\",\"load-more\":\"Load more\",\"created\":\"Created\",\"creation-date\":\"Creation Date\",\"next-charge-date\":\"Next Charge Date\",\"machine\":\"Machine\",\"empty-text\":{\"empty\":\"You have no machine yet\",\"empty-group\":\"You have no machine in this group\",\"not-found-match-keyword\":\"No machine found matching the keyword:\",\"group-not-found\":\"Machine Group Not Found\"},\"error\":\"Something went wrong, try again\"},\"machine-group-list\":{\"name\":\"Group name\",\"paid-at\":\"Paid at\",\"next-charge-at\":\"Next charge at\",\"costs\":\"Total cost\",\"search-placeholder\":\"Search for machine groups...\",\"state\":{\"ready\":\"Ready\",\"error\":\"Failed\",\"deploying\":\"Deploying\"},\"header\":{\"name\":\"Group Name\",\"status\":\"Status\",\"total-cost\":\"Total Costs\",\"running-machines\":\"Running Machines\",\"next-charge-at\":\"Next Charge At\",\"creation-date\":\"Creation Date\"},\"pagination\":{\"items-per-page\":\"Groups per page\"},\"empty-text\":{\"empty\":\"You have no machine group yet\",\"not-found-match-keyword\":\"No machine group found matching the keyword:\"},\"machine\":\"machine\",\"machines\":\"machines\",\"running\":\"running\"}},\"machine-detail\":{\"machine-detail-label\":\"Machine Detail\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Machine List\",\"breadcrumb-subsubmenu\":\"Machine Detail\",\"machine-info\":{\"machine-name\":\"Name\",\"machine-state\":\"State\",\"storage\":\"Storage\",\"os\":\"OS\",\"deployed-at\":\"Deployed at\",\"renewal-at\":\"Renewal at\"},\"state\":{\"running\":\"Running\",\"failed\":\"Failed\",\"deploying\":\"Deploying\"},\"setting-drawer\":{\"title\":\"Machine Settings\",\"machine-name\":\"Machine Name\",\"machine-name-placeholder\":\"Enter machine name\",\"turn-off-autorenew\":\"Turn off auto-renew\",\"turn-off-autorenew-successfully\":\"Turn off auto-renew successfully\",\"turn-on-autorenew\":\"Turn on auto-renew\",\"turn-on-autorenew-successfully\":\"Turn on auto-renew successfully\",\"edit\":\"Edit\",\"save\":\"Save\",\"cancel\":\"Cancel\",\"update-successfully\":\"Update successfully\"},\"copy-machine-uuid-tooltip\":\"Copy Machine UUID\",\"copied-machine-uuid-response\":\"Machine UUID copied to clipboard\",\"logon-information\":{\"title\":\"Logon Information\",\"username\":\"Username\",\"password\":\"Password\",\"copy-username-tooltip\":\"Copy Username\",\"copy-password-tooltip\":\"Copy Password\",\"copied-username-response\":\"Username copied to clipboard\",\"copied-password-response\":\"Password copied to clipboard\",\"initializing-information\":\"Initializing...\"},\"not-found\":\"Machine not found\"},\"payment\":{\"balance\":{\"balance-label\":\"Account Balance\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Payments\",\"breadcrumb-subsubmenu\":\"Account Balance\",\"add-credits\":\"Add credits\",\"balance-tracking\":\"Balance Tracking\",\"status\":{\"successful\":\"Successful\",\"pending\":\"Pending\",\"failed\":\"Failed\"},\"balance-tracking-table\":{\"search-placeholder\":\"Search for balcance changes...\",\"filter\":{\"filters\":\"Filters\",\"hide-filters\":\"Hide Filters\",\"table-filters-title\":\"Balance Change Filters\",\"creation-date\":\"Creation Date\",\"creation-date-placeholder\":\"Select creation date\",\"status\":\"Status\",\"status-placeholder\":\"Select status\",\"clear-filter\":\"Clear\",\"show-results\":\"Show Results\"},\"header\":{\"tracking-id\":\"Tracking ID\",\"creation-date\":\"Creation Date\",\"action\":\"Action\",\"status\":\"Status\"},\"pagination\":{\"items-per-page\":\"Rows per page\"},\"empty-text\":{\"empty\":\"You have no balance change yet\",\"not-found-match-keyword\":\"No balance change found matching the keyword:\",\"not-found-match-filter\":\"No balance change found matching the selected filters\"}},\"topup-modal\":{\"title\":\"Add credits to your account\",\"amount-label\":\"Amount\",\"amount-in-words-label\":\"In words\",\"enter-amount-placeholder\":\"Enter number of credits to add\",\"currency\":{\"dong\":\"dong\"},\"payment-methods-label\":\"Payment Methods\",\"payment-methods\":{\"qr-code-label\":\"QR Code\",\"international-payment-card-label\":\"International Payment Card\",\"domestic-payment-card-label\":\"Domestic Payment Card\",\"apple-pay-label\":\"Apple Pay\"},\"or-text\":\"Or\",\"to-payment-gateway\":\"Go To Payment Gateway\"},\"copy-tracking-id-tooltip\":\"Copy Tracking ID\",\"copied-tracking-id-response\":\"Tracking ID copied to clipboard\",\"not-your-team-warning\":\"This information belongs to your default team.\",\"error\":{\"failed-to-fetch-balance-change\":\"Failed to fetch balance change data\",\"try-again\":\"Try again\"}},\"invoice\":{\"invoice-label\":\"Invoices\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Payments\",\"breadcrumb-subsubmenu\":\"Invoices\",\"status\":{\"successful\":\"Successful\",\"pending\":\"Pending\",\"failed\":\"Failed\"},\"invoice-list-table\":{\"search-placeholder\":\"Search for invoices...\",\"filter\":{\"filters\":\"Filters\",\"hide-filters\":\"Hide Filters\",\"table-filters-title\":\"Invoice Filters\",\"amount\":\"Amount\",\"creation-date\":\"Creation Date\",\"creation-date-placeholder\":\"Select creation date\",\"status\":\"Status\",\"status-placeholder\":\"Select status\",\"clear-filter\":\"Clear\",\"show-results\":\"Show Results\"},\"header\":{\"action\":\"Action\",\"creation-date\":\"Creation Date\",\"amount\":\"Amount\",\"status\":\"Status\"},\"pagination\":{\"items-per-page\":\"Invoices per page\"},\"empty-text\":{\"empty\":\"You have no invoice yet\",\"not-found-match-keyword\":\"No invoice found matching the keyword:\",\"not-found-match-filter\":\"No invoice found matching the selected filters\"},\"view-invoice\":\"View Invoice\",\"download-invoice\":\"Download Invoice\"},\"not-your-team-warning\":\"This information belongs to your default team.\"},\"invoice-detail\":{\"invoice-detail-label\":\"Invoice Detail\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Payments\",\"breadcrumb-subsubmenu\":\"Invoice Detail\",\"print\":\"Print invoice\",\"download\":\"Download invoice\",\"preparing-print\":\"Preparing print...\",\"preparing-pdf\":\"Preparing PDF...\",\"generate-pdf-failed\":\"Generate PDF failed. Please try again later.\",\"status\":{\"successful\":\"Successful\",\"pending\":\"Pending\",\"failed\":\"Failed\"},\"invoice-number\":\"Invoice Number\",\"invoice-from\":\"From\",\"invoice-to\":\"Bill To\",\"creation-date\":\"Creation Date\",\"items-table\":{\"header\":{\"item\":\"Item\",\"quantity\":\"Quantity\",\"unit-price\":\"Unit Price\",\"total\":\"Total\"}},\"notes\":\"Notes\",\"pricing-label\":\"Pricing\",\"discount-label\":\"Discount\",\"total-label\":\"Total\",\"not-found\":\"Invoice not found\"}},\"deployMachine\":{\"deploy-multiple-machine-title\":\"Deploy multiple machine\",\"multiple\":{\"request-cluster-definition\":\"Request cluster definition\",\"documents\":\"Documents\",\"deploy-single-machine\":\"Deploy single machine\",\"deploy-multiple-machine-title\":\"Deploy multiple machine\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Deploy Multiple Machine\",\"deploy-multiple-machine-description\":\"Create a new machine group by providing the required information\",\"workflow\":{\"default\":{\"title\":\"Deploy machine group\",\"description\":\"Machine group doesn't distinguish between servers and clients\"},\"aws-deadline\":{\"title\":\"AWS Deadline\",\"description\":\"AWS ThinkBox Deadline cluster\"},\"vray-spawner\":{\"title\":\"V-Ray Spawner\",\"description\":\"V-Ray Spawner cluster\"},\"pulze-render-manager\":{\"title\":\"Pulze Render Manager\",\"description\":\"The most convenient Render Management Solution\"},\"blender-flamenco\":{\"title\":\"Blender Flamenco\",\"description\":\"Free \u0026 Open source Render Management\"}},\"workflow-status\":{\"available\":\"Available\",\"recommended\":\"Recommended\",\"coming-soon\":\"Coming soon\"},\"default\":{\"deploy-multiple-machine-default-title\":\"Deploy Multiple Machine - Default\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Deploy Multiple Machine\",\"breadcrumb-subsubmenu\":\"Default\",\"page-menu-bar\":{\"basic-information\":\"Basic Information\",\"choose-os\":\"Choose OS\",\"choose-application\":\"Select Application\",\"choose-machine-type\":\"Choose Machine Type\",\"review-deploy\":\"Review \u0026 Deploy\"},\"multiple-group-title\":\"Multiple group title\",\"multiple-group-title-description\":\"We will create a group of machines, please give it a name.\",\"multiple-group-title-placeholder\":\"Your machine group name\",\"choose-machine-size\":\"Choose machine sizes\",\"machine-title\":\"Machine\",\"storage-title\":\"Storage\",\"unit-title\":\"Unit\",\"select-machine-type\":\"Select your machine type\",\"select-machine-type-description\":\"Select type of machines you want to deploy in this group\",\"choose-os-title\":\"Choose an OS to install\",\"choose-os-title-description\":\"Choose an operating system for your machines.\",\"an-error-occurred\":\"An error occurred\",\"machines-deployed-successfully\":\"Machines deployed successfully\",\"please-choose-an-offer\":\"Please choose an offer\",\"please-choose-a-team\":\"Please choose a team\",\"machine\":\"Machine\",\"quantity\":\"Quantity\",\"max-quantiy-reached\":\"Maximum machine of this type reached\",\"available\":\"Available\",\"cost\":\"Cost\",\"total\":\"Total\",\"choose-applications\":\"Choose Applications\",\"choose-applications-description\":\"Select the applications you want to install on the machine\",\"doesnt-has-that-offer\":\"Doesn't has that offer\",\"bare-metal\":\"Bare Metal\",\"offers-and-summary-title\":\"Offers \u0026 Summary\",\"offers-and-summary-description\":\"Choose offers and see the summary of your deployment\",\"please-choose-an-offer-below\":\"Please choose an offer below\",\"total-cost\":\"Total cost\",\"deploy\":\"Deploy\",\"please-select-at-least-one-machine\":\"Please select at least one machine\",\"please-select-an-os\":\"Please select an operating system\",\"please-give-a-name-to-the-group\":\"Please select set a name for group\",\"coming-soon\":\"Coming soon\"},\"defaultmachines-deployed-successfully\":\"Machines deployed successfully\",\"append\":{\"deploy-multiple-machine-append-title\":\"Deploy More Machine To Machine Group\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Deploy Multiple Machine\",\"breadcrumb-subsubmenu\":\"Deploy More Machine\",\"select-machine-type\":\"Select machine type\",\"depending-on-build-time\":\"The pricing maybe low or higher based on built time\"},\"awsDeadline\":{\"deploy-multiple-machine-default-title\":\"Deploy Multiple Machine - AWS Deadline\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Deploy Multiple Machine\",\"breadcrumb-subsubmenu\":\"AWS Deadline\",\"page-menu-bar\":{\"basic-information\":\"Basic Information\",\"choose-os\":\"Choose OS\",\"deadline-repository\":\"Deadline Repository\",\"choose-application\":\"Select Application\",\"choose-machine-type\":\"Choose Machine Type\",\"review-deploy\":\"Review \u0026 Deploy\"},\"multiple-group-title\":\"AWS Group name\",\"multiple-group-title-description\":\"Set a name for your AWS Thinkbox Deadline group\",\"multiple-group-title-placeholder\":\"My AWS Thinkbox Deadline Group 1\",\"repository-warning-title\":\"Deadline Repository\",\"repository-warning-description\":\"We offer a robust Deadline Repository server, available at no cost for you to use throughout your work process. The server comes pre-installed with the Ubuntu operating system by default.\",\"setup-deadline-repository-description\":\"Choose the Thinkbox Deadline version that suits you best.\",\"select-deadline-version\":\"Select deadline repository version\",\"repository-config\":\"Setup Thinkbox Deadline Repository\",\"machine-title\":\"Machine\",\"storage-title\":\"Storage\",\"unit-title\":\"Unit\",\"select-machine-type\":\"Select your machine type\",\"select-machine-type-description\":\"Select type of machines you want to deploy in this group\",\"choose-os-title\":\"Choose an OS to install\",\"choose-os-title-description\":\"Choose an operating system for your machines.\",\"an-error-occurred\":\"An error occurred\",\"machines-deployed-successfully\":\"Machines deployed successfully\",\"please-choose-an-offer\":\"Please choose an offer\",\"please-choose-a-team\":\"Please choose a team\",\"machine\":\"Machine\",\"quantity\":\"Quantity\",\"max-quantiy-reached\":\"Maximum machine of this type reached\",\"available\":\"Available\",\"cost\":\"Cost\",\"total\":\"Total\",\"choose-applications\":\"Choose Applications\",\"choose-applications-description\":\"Select the applications you want to install on the machine\",\"estimate-time-note\":\"It will take about 10 more minutes for the deadline repository to be ready\",\"doesnt-has-that-offer\":\"Doesn't has that offer\",\"bare-metal\":\"Bare Metal\",\"offers-and-summary-title\":\"Offers \u0026 Summary\",\"offers-and-summary-description\":\"Choose offers and see the summary of your deployment\",\"please-choose-an-offer-below\":\"Please choose an offer below\",\"total-cost\":\"Total cost\",\"deploy\":\"Deploy\",\"please-select-at-least-one-machine\":\"Please select at least one machine\",\"please-select-an-os\":\"Please select an operating system\",\"please-give-a-name-to-the-group\":\"Please select set a name for group\",\"coming-soon\":\"Coming soon\"}},\"singledeploy-single-machine\":\"Deploy single machine\",\"single\":{\"deploy-description\":\"Deploy a single, best machine for your needs, we will choose the best machine type and region for you.\",\"step1-content\":\"You can choose an operating system for your machine.\",\"choose-an-os\":\"Choose an OS\",\"step2-title\":\"Select applications\",\"step2-content-1\":\"Select the applications\",\"step2-content-2\":\"you want to install on your machine\",\"step3-content-1\":\"Choose the machine type that\",\"step3-content-2\":\"best suits your needs.\",\"step3-titile\":\"Pick machine type\",\"cancel\":\"Cancel\",\"select-os-title\":\"Choose an OS you want to install\",\"coming-soon\":\"Coming soon\",\"deploy-single-machine\":\"Deploy single machine\",\"back\":\"Back\",\"next\":\"Next\",\"skip-this-step\":\"Skip this step\",\"your-selection\":\"Your selection\",\"select-a-preset\":\"Select a preset\",\"show-recommend-related-apps\":\"Show recommend related apps\",\"est-installation\":\"Est. Installation:\",\"required-minimum-ssd\":\"Required minimum SSD:\",\"save-as-preset\":\"Save as preset\",\"save-as-preset-tooltip-content\":\"Save your current selected installations as a preset, easy to use in future\",\"choose-machine-size\":\"Choose machine type\",\"machine-size-required\":\"Machine type is required\",\"storage-title\":\"Storage\",\"choose-plan-and-options\":\"Choose plan and options\",\"deploy-machine\":\"Deploy machine\",\"machine-name\":\"Machine name\",\"machine-name-required\":\"Please give your machine a name to continue\",\"give-your-machine-a-name\":\"Give your machine a name\",\"choose-a-plan\":\"Offer plans\",\"plan-required\":\"Please select a plan to continue\",\"select-a-plan-that-fits-your-needs\":\"Select a plan that fits your needs\",\"please-select-a-machine-size-to-see-plans\":\"Please select a machine size to get the offers\",\"current-balance\":\"Curent balance\",\"holding-amount\":\"holding\",\"holding-amount-tooltip\":\"This is the number of credits being held temporarily for the machines you are deploying, and it will be deducted from your balance once those machines are deployed successfully\",\"available-balance\":\"Available balance\",\"options\":\"Options\",\"options-content\":\"Management your machine better with additional options\",\"auto-renew\":\"Auto-renew\",\"automatically-renew-your-plan\":\"Automatically renew your plan\"}},\"deployment-tours\":{\"select-a-software\":\"Select a software\",\"choose-a-software-from-the-list-to-install\":\"Choose a software from the list to install\",\"summary\":\"Inventory\",\"if-you-use-a-preset-your-applications-belong-to-preset-will-appear-here\":\"Your selected software will be appeared here, also show the estimated time required to install\",\"preset-saver\":\"Save as preset\",\"save-as-preset-content\":\"You can save your software selection and use it in future by using \\\"Save as preset\\\" feature.\",\"using-from-preset\":\"Using from preset\",\"using-preset-content\":\"If you're already defined a preset, you can select from here to apply\",\"next-step-pick-machine\":\"Next step\",\"next-step-content\":\"After you selected to software, navigate to next step to pick your machine type and plan\"},\"multiple\":{\"request-cluster-definition\":\"Request cluster definition\"},\"software-selection\":{\"search-placeholder\":\"Search for application...\",\"inventory\":\"Inventory\",\"save-as-preset\":\"Save as preset\",\"est-installation\":\"Est. Installation:\",\"required-minimum-ssd\":\"Required minimum SSD:\",\"select-a-preset\":\"Select a preset to apply\",\"no-preset\":\"You haven't saved any preset yet\",\"save-as-preset-tooltip-content\":\"Save current selected applications to a preset\",\"all\":\"All\"},\"gs-remote\":{\"failed-to-create-remote-session\":\"Failed to create remote session\",\"create-remote-session\":\"Create Session\"},\"deploy-machine\":\"Deploy machine\",\"create-folder\":\"Create folder\",\"upload-folder\":\"Upload folder\",\"drop-or-select-file-folder-title\":\"Drop or select files/folders\",\"drop-or-select-file-folder-description\":\"Drop files/folders here or click \u003cbrowse\u003ebrowse\u003c/browse\u003e thorough your machine\",\"application-presets\":{\"application-presets-label\":\"Application Presets Manager\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Application Presets\",\"add-new-preset\":\"Add new preset\",\"preset-card\":{\"required\":\"Required\",\"estimate\":\"Estimate\",\"edit-preset\":\"Edit preset\",\"rename\":\"Rename\",\"remove\":\"Remove\"}},\"application-preset-detail\":{\"application-preset-detail-label\":\"Application Presets Detail\",\"breadcrumb-home\":\"Workspace\",\"breadcrumb-submenu\":\"Application Presets\",\"breadcrumb-subsubmenu\":\"Application Preset Detail\",\"preset-display-name\":\"Preset display name\",\"preset-display-name-placeholder\":\"Enter preset name\",\"search-placeholder\":\"Search for application...\",\"preset-display-name-description\":\"The preset name must be less than 64 characters\",\"warning-action-cannot-be-rollback\":\"Action cannot be rollback, careful!\",\"undo-changes\":\"Undo changes\",\"save-preset\":\"Save preset\"},\"notification\":{\"mark-all-as-read\":\"Mark all as read\",\"title\":\"Notifications\",\"item\":{\"message\":\"Message\",\"accept-invitation\":\"Accept\",\"decline-invitation\":\"Decline\",\"loading\":\"Loading the UI\"},\"empty\":\"No notification found\"},\"notifications\":\"Notifications\",\"mark-all-as-read\":\"Mark all as read\",\"braintree-modal\":{\"enter-amount-you-want-to-deposit\":\"Enter amount you want to deposit\",\"create-braintree-instance-failed\":\"Cannot initialize payment gateway, please contact our support\",\"create-sale-transaction-successfully\":\"Top up account successfully\",\"create-sale-transaction-fail\":\"Cannot make transaction, please contact our support\",\"request-checkout-fail\":\"No payment method is available\",\"checkout\":\"Checkout\",\"amount-label\":\"Amount\",\"amount-in-words-label\":\"In words\",\"currency\":{\"dollar\":\"dollar\",\"dollars\":\"dollars\"},\"confirm\":{\"title\":\"Confirm Payment?\",\"message\":\"Are you sure you want to top up \u003ccreditsBlock\u003e\u003c/creditsBlock\u003e to your account?\"},\"invalid-amount\":\"Invalid amount, please enter valid amount\"},\"checkout\":\"Checkout\"},\"children\":[\"$\",\"$L18\",null,{\"children\":[\"$\",\"$L19\",null,{\"children\":[\"$\",\"$L1a\",null,{\"children\":[\"$\",\"$L1b\",null,{\"children\":[[\"$\",\"$L1c\",null,{}],[\"$\",\"$Lb\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[\"$\",\"div\",null,{\"className\":\"flex min-h-screen flex-col bg-[#F8FAFC]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sticky top-0 z-40 flex justify-center py-5 backdrop-blur-lg lg:backdrop-blur-none xl:py-10\",\"children\":[\"$\",\"$L1d\",null,{\"href\":\"/\",\"children\":\"$undefined\"}]}],[\"$\",\"div\",null,{\"className\":\"flex grow items-center px-6 xl:px-10\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto text-center\",\"children\":[[\"$\",\"$L1e\",null,{\"src\":{\"src\":\"./_next/static/media/not-found.6ff76223.png\",\"height\":370,\"width\":385,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAS1BMVEVMaXHr4N3///8QM3Tm6u/t7e7o6Ojy8vL9/v/39/f///////8lN2Vpg9K0u9kpeuLPz8/b29stf+j39vP29PPZ2dv////9/f3///+oi60DAAAAGHRSTlMAPtps5rNPF/RVrv5NRKqg3HmcyMqQCOwqLAGQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQUlEQVR4nCXGWxKAIAwEwQUSkgA+Qcz9T2qp89E1wLEHfBmty384t1dhSQkTmJe0hiwIPIg6Z9xe3asrrETVWOwBOkwCAWBN16oAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":8},\"alt\":\"not found\",\"className\":\"mx-auto mb-8 aspect-[360/326] max-w-[256px] xs:max-w-[370px] lg:mb-12 2xl:mb-16\"}],[\"$\",\"$L1f\",null,{\"as\":\"h1\",\"className\":\"text-[22px] font-bold leading-normal text-gray-1000 lg:text-3xl\",\"children\":\"Sorry, the page not found\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-sm leading-loose text-gray-500 lg:mt-6 lg:text-base lg:leading-loose\",\"children\":[\"We have been spending long hours in order to launch our new website. Join our\",[\"$\",\"br\",null,{\"className\":\"hidden sm:inline-block\"}],\"mailing list or follow us on Facebook for get latest update.\"]}],[\"$\",\"$L1d\",null,{\"href\":\"/\",\"children\":[\"$\",\"$L20\",null,{\"as\":\"span\",\"size\":\"xl\",\"color\":\"primary\",\"className\":\"mt-8 h-12 px-4 xl:h-14 xl:px-6\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"currentColor\",\"strokeWidth\":\"0\",\"viewBox\":\"0 0 256 256\",\"className\":\"mr-1.5 text-lg\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M240,204H228V144a12,12,0,0,0,12.49-19.78L142.14,25.85a20,20,0,0,0-28.28,0L15.51,124.2A12,12,0,0,0,28,144v60H16a12,12,0,0,0,0,24H240a12,12,0,0,0,0-24ZM52,121.65l76-76,76,76V204H164V152a12,12,0,0,0-12-12H104a12,12,0,0,0-12,12v52H52ZM140,204H116V164h24Z\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"Back to home\"]}]}]]}]}],[\"$\",\"div\",null,{\"className\":\"mt-8 flex items-center justify-center gap-6 py-6 md:mt-10 lg:mt-0 xl:py-8\",\"children\":[[\"$\",\"a\",\"Facebook\",{\"href\":\"https://facebook.com\",\"rel\":\"norefferer\",\"target\":\"_blank\",\"className\":\"social-btn-shadow inline-block rounded-full bg-white p-3 text-gray-500 transition-all duration-300 hover:text-gray-1000 dark:bg-gray-100 dark:text-gray-700 dark:hover:text-gray-1000\",\"children\":[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"currentColor\",\"strokeWidth\":\"0\",\"viewBox\":\"0 0 256 256\",\"className\":\"h-auto w-4\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}]}],[\"$\",\"a\",\"Twitter\",{\"href\":\"https://twitter.com\",\"rel\":\"norefferer\",\"target\":\"_blank\",\"className\":\"social-btn-shadow inline-block rounded-full bg-white p-3 text-gray-500 transition-all duration-300 hover:text-gray-1000 dark:bg-gray-100 dark:text-gray-700 dark:hover:text-gray-1000\",\"children\":[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"currentColor\",\"strokeWidth\":\"0\",\"viewBox\":\"0 0 256 256\",\"className\":\"h-auto w-4\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}]}],[\"$\",\"a\",\"Instagram\",{\"href\":\"https://instagram.com\",\"rel\":\"norefferer\",\"target\":\"_blank\",\"className\":\"social-btn-shadow inline-block rounded-full bg-white p-3 text-gray-500 transition-all duration-300 hover:text-gray-1000 dark:bg-gray-100 dark:text-gray-700 dark:hover:text-gray-1000\",\"children\":[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"currentColor\",\"strokeWidth\":\"0\",\"viewBox\":\"0 0 256 256\",\"className\":\"h-auto w-4\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}]}],[\"$\",\"a\",\"Youtube\",{\"href\":\"https://youtube.com\",\"rel\":\"norefferer\",\"target\":\"_blank\",\"className\":\"social-btn-shadow inline-block rounded-full bg-white p-3 text-gray-500 transition-all duration-300 hover:text-gray-1000 dark:bg-gray-100 dark:text-gray-700 dark:hover:text-gray-1000\",\"children\":[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"currentColor\",\"strokeWidth\":\"0\",\"viewBox\":\"0 0 256 256\",\"className\":\"h-auto w-4\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}]}]]}]]}],\"notFoundStyles\":[],\"styles\":[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"./_next/static/css/aa15fe3776697b1b.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]]}],[\"$\",\"$L21\",null,{}],[\"$\",\"$L22\",null,{}],[\"$\",\"$L23\",null,{}],[\"$\",\"$L24\",null,{}],[\"$\",\"$L25\",null,{}]]}]}]}]}]}]\n"])</script>
+    <next-route-announcer style="position: absolute;"></next-route-announcer>
+    <style>
+        #nprogress {
+            pointer-events: none
+        }
+
+        #nprogress .bar {
+            background: #29d;
+            position: fixed;
+            z-index: 1600;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px
+        }
+
+        #nprogress .peg {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 100px;
+            height: 100%;
+            box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+            opacity: 1;
+            -webkit-transform: rotate(3deg) translate(0px, -4px);
+            -ms-transform: rotate(3deg) translate(0px, -4px);
+            transform: rotate(3deg) translate(0px, -4px)
+        }
+
+        #nprogress .spinner {
+            display: block;
+            position: fixed;
+            z-index: 1600;
+            top: 15px;
+            right: 15px
+        }
+
+        #nprogress .spinner-icon {
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            border-top-color: #29d;
+            border-left-color: #29d;
+            border-radius: 50%;
+            -webkit-animation: nprogress-spinner 400ms linear infinite;
+            animation: nprogress-spinner 400ms linear infinite
+        }
+
+        .nprogress-custom-parent {
+            overflow: hidden;
+            position: relative
+        }
+
+        .nprogress-custom-parent #nprogress .bar,
+        .nprogress-custom-parent #nprogress .spinner {
+            position: absolute
+        }
+
+        @-webkit-keyframes nprogress-spinner {
+            0% {
+                -webkit-transform: rotate(0deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes nprogress-spinner {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+    <main class="flex min-h-screen flex-grow">
+        <aside
+            class="bottom-0 start-0 z-50 h-full w-[270px] border-e-2 border-gray-100 bg-white 2xl:w-72 fixed hidden dark:bg-gray-50 xl:block">
+            <div class="sticky top-0 z-40 bg-gray-0/10 px-6 pb-5 pt-5 dark:bg-gray-100/5 2xl:px-8 2xl:pt-6"><a
+                    aria-label="Site Logo" class="text-gray-800 hover:text-gray-900" href="/"><img
+                        alt="logo long black text" draggable="false" fetchpriority="high" loading="eager" width="187"
+                        height="44" decoding="async" data-nimg="1" class="select-none dark:hidden"
+                        srcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-black-text.9d9ee0fe.png&amp;w=256&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-black-text.9d9ee0fe.png&amp;w=384&amp;q=75 2x"
+                        src="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-black-text.9d9ee0fe.png&amp;w=384&amp;q=75"
+                        style="color: transparent;"><img alt="logo long white text" draggable="false"
+                        fetchpriority="high" loading="eager" width="187" height="44" decoding="async" data-nimg="1"
+                        class="hidden select-none dark:block"
+                        srcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-white-text.8d6728a5.png&amp;w=256&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-white-text.8d6728a5.png&amp;w=384&amp;q=75 2x"
+                        src="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-long-white-text.8d6728a5.png&amp;w=384&amp;q=75"
+                        style="color: transparent;"></a></div>
+            <div data-simplebar="init" class="h-[calc(100%-80px)] simplebar-scrollable-y">
+                <div class="simplebar-wrapper" style="margin: 0px;">
+                    <div class="simplebar-height-auto-observer-wrapper">
+                        <div class="simplebar-height-auto-observer"></div>
+                    </div>
+                    <div class="simplebar-mask">
+                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                            <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;">
+                                <div class="simplebar-content" style="padding: 0px;">
+                                    <div class="mt-4 pb-3 3xl:mt-6">
+                                        <h6
+                                            class="rizzui-title-h6 mb-2 truncate px-6 text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 2xl:px-8">
+                                            Dashboard</h6><a
+                                            class="group relative mx-3 my-0.5 flex items-center justify-between rounded-lg px-3 py-2 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-700/90"
+                                            href="/workspace">
+                                            <div class="flex items-center truncate"><span
+                                                    class="me-2 inline-flex h-5 w-5 items-center justify-center rounded-lg [&amp;>svg]:h-[20px] [&amp;>svg]:w-[20px] text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-700"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 256 256" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z">
+                                                        </path>
+                                                    </svg></span><span class="truncate">Dashboard</span></div>
+                                        </a>
+                                        <h6
+                                            class="rizzui-title-h6 mb-2 truncate px-6 text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 2xl:px-8 mt-6 3xl:mt-7">
+                                            Product</h6><a
+                                            class="group relative mx-3 my-0.5 flex items-center justify-between rounded-lg px-3 py-2 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-700/90"
+                                            href="/workspace/files-manager">
+                                            <div class="flex items-center truncate"><span
+                                                    class="me-2 inline-flex h-5 w-5 items-center justify-center rounded-lg [&amp;>svg]:h-[20px] [&amp;>svg]:w-[20px] text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-700"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 256 256" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M213.66,66.34l-40-40A8,8,0,0,0,168,24H88A16,16,0,0,0,72,40V56H56A16,16,0,0,0,40,72V216a16,16,0,0,0,16,16H168a16,16,0,0,0,16-16V200h16a16,16,0,0,0,16-16V72A8,8,0,0,0,213.66,66.34ZM168,216H56V72h76.69L168,107.31v84.53c0,.06,0,.11,0,.16s0,.1,0,.16V216Zm32-32H184V104a8,8,0,0,0-2.34-5.66l-40-40A8,8,0,0,0,136,56H88V40h76.69L200,75.31Zm-56-32a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h48A8,8,0,0,1,144,152Zm0,32a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h48A8,8,0,0,1,144,184Z">
+                                                        </path>
+                                                    </svg></span><span class="truncate">Storage</span></div>
+                                        </a><a
+                                            class="group relative mx-3 my-0.5 flex items-center justify-between rounded-lg px-3 py-2 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-700/90"
+                                            href="/workspace/machine-list">
+                                            <div class="flex items-center truncate"><span
+                                                    class="me-2 inline-flex h-5 w-5 items-center justify-center rounded-lg [&amp;>svg]:h-[20px] [&amp;>svg]:w-[20px] text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-700"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 256 256" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M216,72a8,8,0,0,1-8,8H176a8,8,0,0,1,0-16h32A8,8,0,0,1,216,72Zm-8,24H176a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16Zm40-48V208a16,16,0,0,1-16,16H152a16,16,0,0,1-16-16V192H96v16h16a8,8,0,0,1,0,16H64a8,8,0,0,1,0-16H80V192H32A24,24,0,0,1,8,168V96A24,24,0,0,1,32,72H136V48a16,16,0,0,1,16-16h80A16,16,0,0,1,248,48ZM136,176V88H32a8,8,0,0,0-8,8v72a8,8,0,0,0,8,8Zm96,32V48H152V208h80Zm-40-40a12,12,0,1,0,12,12A12,12,0,0,0,192,168Z">
+                                                        </path>
+                                                    </svg></span><span class="truncate">All Machines</span></div>
+                                        </a><a
+                                            class="group relative mx-3 my-0.5 flex items-center justify-between rounded-lg px-3 py-2 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-700/90"
+                                            href="/workspace/application-presets">
+                                            <div class="flex items-center truncate"><span
+                                                    class="me-2 inline-flex h-5 w-5 items-center justify-center rounded-lg [&amp;>svg]:h-[20px] [&amp;>svg]:w-[20px] text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-700"><svg
+                                                        stroke="currentColor" fill="none" stroke-width="2"
+                                                        viewBox="0 0 24 24" stroke-linecap="round"
+                                                        stroke-linejoin="round" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z">
+                                                        </path>
+                                                        <path
+                                                            d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z">
+                                                        </path>
+                                                        <path
+                                                            d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z">
+                                                        </path>
+                                                        <path
+                                                            d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z">
+                                                        </path>
+                                                    </svg></span><span class="truncate">Application presets</span></div>
+                                        </a>
+                                        <h6
+                                            class="rizzui-title-h6 mb-2 truncate px-6 text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 2xl:px-8 mt-6 3xl:mt-7">
+                                            Payments</h6><a
+                                            class="group relative mx-3 my-0.5 flex items-center justify-between rounded-lg px-3 py-2 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-700/90"
+                                            href="/workspace/payments/balances">
+                                            <div class="flex items-center truncate"><span
+                                                    class="me-2 inline-flex h-5 w-5 items-center justify-center rounded-lg [&amp;>svg]:h-[20px] [&amp;>svg]:w-[20px] text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-700"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 256 256" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M184,89.57V84c0-25.08-37.83-44-88-44S8,58.92,8,84v40c0,20.89,26.25,37.49,64,42.46V172c0,25.08,37.83,44,88,44s88-18.92,88-44V132C248,111.3,222.58,94.68,184,89.57ZM232,132c0,13.22-30.79,28-72,28-3.73,0-7.43-.13-11.08-.37C170.49,151.77,184,139,184,124V105.74C213.87,110.19,232,122.27,232,132ZM72,150.25V126.46A183.74,183.74,0,0,0,96,128a183.74,183.74,0,0,0,24-1.54v23.79A163,163,0,0,1,96,152,163,163,0,0,1,72,150.25Zm96-40.32V124c0,8.39-12.41,17.4-32,22.87V123.5C148.91,120.37,159.84,115.71,168,109.93ZM96,56c41.21,0,72,14.78,72,28s-30.79,28-72,28S24,97.22,24,84,54.79,56,96,56ZM24,124V109.93c8.16,5.78,19.09,10.44,32,13.57v23.37C36.41,141.4,24,132.39,24,124Zm64,48v-4.17c2.63.1,5.29.17,8,.17,3.88,0,7.67-.13,11.39-.35A121.92,121.92,0,0,0,120,171.41v23.46C100.41,189.4,88,180.39,88,172Zm48,26.25V174.4a179.48,179.48,0,0,0,24,1.6,183.74,183.74,0,0,0,24-1.54v23.79a165.45,165.45,0,0,1-48,0Zm64-3.38V171.5c12.91-3.13,23.84-7.79,32-13.57V172C232,180.39,219.59,189.4,200,194.87Z">
+                                                        </path>
+                                                    </svg></span><span class="truncate">Account Balance</span></div>
+                                        </a><a
+                                            class="group relative mx-3 my-0.5 flex items-center justify-between rounded-lg px-3 py-2 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-700/90"
+                                            href="/workspace/payments/invoices">
+                                            <div class="flex items-center truncate"><span
+                                                    class="me-2 inline-flex h-5 w-5 items-center justify-center rounded-lg [&amp;>svg]:h-[20px] [&amp;>svg]:w-[20px] text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-700"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 256 256" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M28,128a8,8,0,0,1,0-16H56a8,8,0,0,0,0-16H40a24,24,0,0,1,0-48,8,8,0,0,1,16,0h8a8,8,0,0,1,0,16H40a8,8,0,0,0,0,16H56a24,24,0,0,1,0,48,8,8,0,0,1-16,0ZM232,56V192a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V152a8,8,0,0,1,16,0v40H160V160H80a8,8,0,0,1,0-16h80V112H104a8,8,0,0,1,0-16H216V64H96a8,8,0,0,1,0-16H224A8,8,0,0,1,232,56Zm-56,88h40V112H176Zm40,48V160H176v32Z">
+                                                        </path>
+                                                    </svg></span><span class="truncate">Invoices</span></div>
+                                        </a>
+                                        <div role="collapse" aria-expanded="false" data-testid="collapse-parent"
+                                            class="rizzui-collapse-root [&amp;_.rizzui-collapse-panel]:mt-2">
+                                            <div
+                                                class="group relative flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 font-medium 2xl:px-6 mx-2 text-gray-700 transition-colors duration-200 hover:bg-gray-100 dark:text-gray-700/90 dark:hover:text-gray-700 mt-4 3xl:mt-5">
+                                                <h6
+                                                    class="rizzui-title-h6 truncate text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500">
+                                                    Account</h6><svg stroke="currentColor" fill="currentColor"
+                                                    stroke-width="3" viewBox="0 0 256 256"
+                                                    class="h-3.5 w-3.5 -rotate-90 text-gray-500 transition-transform duration-200 rtl:rotate-90"
+                                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="rizzui-collapse-panel" style="display: none;"><a
+                                                    class="mx-3.5 mb-0.5 flex items-center justify-between rounded-lg px-3.5 py-2 font-medium capitalize last-of-type:mb-1 lg:last-of-type:mb-2 2xl:mx-5 text-gray-500 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900"
+                                                    href="/workspace/account-settings">
+                                                    <div class="flex items-center truncate"><span
+                                                            class="me-[18px] ms-1 inline-flex h-1 w-1 rounded-lg bg-current transition-all duration-200 opacity-40"></span>
+                                                        <span class="truncate">Basic Information</span></div>
+                                                </a><a
+                                                    class="mx-3.5 mb-0.5 flex items-center justify-between rounded-lg px-3.5 py-2 font-medium capitalize last-of-type:mb-1 lg:last-of-type:mb-2 2xl:mx-5 text-gray-500 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900"
+                                                    href="/workspace/account-settings/billing">
+                                                    <div class="flex items-center truncate"><span
+                                                            class="me-[18px] ms-1 inline-flex h-1 w-1 rounded-lg bg-current transition-all duration-200 opacity-40"></span>
+                                                        <span class="truncate">Billing Information</span></div>
+                                                </a><a
+                                                    class="mx-3.5 mb-0.5 flex items-center justify-between rounded-lg px-3.5 py-2 font-medium capitalize last-of-type:mb-1 lg:last-of-type:mb-2 2xl:mx-5 text-gray-500 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900"
+                                                    href="/workspace/account-settings/security">
+                                                    <div class="flex items-center truncate"><span
+                                                            class="me-[18px] ms-1 inline-flex h-1 w-1 rounded-lg bg-current transition-all duration-200 opacity-40"></span>
+                                                        <span class="truncate">Security</span></div>
+                                                </a><a
+                                                    class="mx-3.5 mb-0.5 flex items-center justify-between rounded-lg px-3.5 py-2 font-medium capitalize last-of-type:mb-1 lg:last-of-type:mb-2 2xl:mx-5 text-gray-500 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900"
+                                                    href="/workspace/account-settings/teams">
+                                                    <div class="flex items-center truncate"><span
+                                                            class="me-[18px] ms-1 inline-flex h-1 w-1 rounded-lg bg-current transition-all duration-200 opacity-40"></span>
+                                                        <span class="truncate">Teams</span></div>
+                                                </a><a
+                                                    class="mx-3.5 mb-0.5 flex items-center justify-between rounded-lg px-3.5 py-2 font-medium capitalize last-of-type:mb-1 lg:last-of-type:mb-2 2xl:mx-5 text-gray-500 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-900"
+                                                    href="/workspace/account-settings/sftp">
+                                                    <div class="flex items-center truncate"><span
+                                                            class="me-[18px] ms-1 inline-flex h-1 w-1 rounded-lg bg-current transition-all duration-200 opacity-40"></span>
+                                                        <span class="truncate">Storage Credentials</span></div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="simplebar-placeholder" style="width: 268px; height: 424px;"></div>
+                </div>
+                <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                    <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                </div>
+                <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                    <div class="simplebar-scrollbar"
+                        style="height: 73px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                </div>
+            </div>
+        </aside>
+        <div class="flex w-full flex-col xl:ms-[270px] xl:w-[calc(100%-270px)] 2xl:ms-72 2xl:w-[calc(100%-288px)]">
+            <header
+                class="sticky top-0 flex items-center bg-gray-0/80 p-4 backdrop-blur-xl dark:bg-gray-50/50 md:px-5 lg:px-6 z-[990] 2xl:py-5 3xl:px-8 4xl:px-10">
+                <div class="flex w-full items-center justify-between gap-5 3xl:gap-6">
+                    <div class="flex w-full max-w-2xl items-center"><button
+                            class="rizzui-action-icon-root inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-[1.8px] focus-visible:ring-offset-2 ring-offset-background transition-colors duration-200 rounded hover:text-primary focus-visible:ring-primary-lighter me-3 h-auto w-auto p-0 sm:me-4 xl:hidden"
+                            type="button" aria-label="Open Sidebar Menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"></path>
+                            </svg></button><a aria-label="Site Logo"
+                            class="me-4 w-9 shrink-0 text-gray-800 hover:text-gray-900 lg:me-5 xl:hidden" href="/"><img
+                                alt="logo black text" draggable="false" fetchpriority="high" loading="eager" width="64"
+                                height="64" decoding="async" data-nimg="1" class="select-none dark:hidden"
+                                srcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black-text.c0a8563c.png&amp;w=64&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black-text.c0a8563c.png&amp;w=128&amp;q=75 2x"
+                                src="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black-text.c0a8563c.png&amp;w=128&amp;q=75"
+                                style="color: transparent;"><img alt="logo white text" draggable="false"
+                                fetchpriority="high" loading="eager" width="64" height="64" decoding="async"
+                                data-nimg="1" class="hidden select-none dark:block"
+                                srcset="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white-text.2028aec7.png&amp;w=64&amp;q=75 1x, ./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white-text.2028aec7.png&amp;w=128&amp;q=75 2x"
+                                src="./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white-text.2028aec7.png&amp;w=128&amp;q=75"
+                                style="color: transparent;"></a><button aria-label="Quick access..."
+                            class="group inline-flex items-center focus:outline-none active:translate-y-px xl:h-10 xl:max-w-sm xl:rounded-lg xl:border xl:border-muted xl:py-2 xl:pe-2 xl:ps-3.5 xl:shadow-sm xl:backdrop-blur-md xl:transition-colors xl:duration-200 xl:hover:border-gray-900 xl:hover:outline-double xl:hover:outline-[0.5px] xl:hover:outline-gray-900 xl:focus-visible:border-gray-900 xl:focus-visible:outline-double xl:focus-visible:outline-[0.5px] xl:focus-visible:outline-gray-900 xl:w-[300px]"><svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
+                                class="me-3 h-[20px] w-[20px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                </path>
+                            </svg><span
+                                class="placeholder-text hidden text-sm text-gray-600 group-hover:text-gray-900 xl:inline-flex">Quick
+                                access...</span><span
+                                class="search-command ms-auto hidden items-center text-sm text-gray-600 lg:flex lg:rounded-md lg:bg-primary lg:px-1.5 lg:py-1 lg:text-xs lg:font-semibold lg:text-primary-foreground xl:justify-normal"><svg
+                                    stroke="currentColor" fill="currentColor" stroke-width="1.3" viewBox="0 0 256 256"
+                                    class="h-[15px] w-[15px]" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M180,144H160V112h20a36,36,0,1,0-36-36V96H112V76a36,36,0,1,0-36,36H96v32H76a36,36,0,1,0,36,36V160h32v20a36,36,0,1,0,36-36ZM160,76a20,20,0,1,1,20,20H160ZM56,76a20,20,0,0,1,40,0V96H76A20,20,0,0,1,56,76ZM96,180a20,20,0,1,1-20-20H96Zm16-68h32v32H112Zm68,88a20,20,0,0,1-20-20V160h20a20,20,0,0,1,0,40Z">
+                                    </path>
+                                </svg>K</span></button></div>
+                    <div class="flex items-center justify-between">
+                        <div class="ms-auto flex shrink-0 items-center gap-2 text-gray-700 xs:gap-3 xl:gap-4">
+                            <div class="flex items-center">
+                                <p
+                                    class="rizzui-text-p font-normal flex !h-[30px] items-center gap-2 rounded-md border border-y-[1px] border-solid bg-white py-1 pe-2 ps-4 dark:bg-muted rounded-e-none">
+                                    <span class="font-semibold text-gray-500 max-sm:hidden">Credits:</span><span
+                                        class="font-semibold">0</span><svg stroke="currentColor" fill="none"
+                                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-xl text-yellow-500" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z">
+                                        </path>
+                                        <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"></path>
+                                        <path
+                                            d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z">
+                                        </path>
+                                        <path d="M3 6v10c0 .888 .772 1.45 2 2"></path>
+                                        <path d="M3 11c0 .888 .772 1.45 2 2"></path>
+                                    </svg></p>
+                                <div
+                                    class="     relative flex !h-[30px] !w-[24px] cursor-pointer items-center justify-center rounded-e-md     rounded-s-none border border-y-[1px] border-solid bg-gray-200 text-gray-500 backdrop-blur-md transition-all duration-150 hover:text-primary dark:bg-gray-100">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 256 256" class="h-[14px] w-auto" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
+                                        </path>
+                                    </svg></div>
+                            </div><button
+                                class="rizzui-action-icon-root inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-[1.8px] focus-visible:ring-offset-2 ring-offset-background transition-colors duration-200 p-1 rounded hover:text-primary focus-visible:ring-primary-lighter relative h-[34px] w-[34px] shadow backdrop-blur-md dark:bg-gray-100 md:h-9 md:w-9"
+                                type="button" aria-label="Notification"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 18 18" fill="none" class="h-[18px] w-auto">
+                                    <path class="fill-current opacity-40"
+                                        d="M16.5 8.162a.75.75 0 0 1-.75-.75 7.824 7.824 0 0 0-2.306-5.569.75.75 0 0 1 1.06-1.06 9.315 9.315 0 0 1 2.746 6.629.752.752 0 0 1-.75.75ZM1.5 8.162a.75.75 0 0 1-.751-.75c0-2.505.975-4.86 2.746-6.63a.751.751 0 0 1 1.061 1.06 7.824 7.824 0 0 0-2.306 5.57.75.75 0 0 1-.75.75Z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M16.034 12.684A5.025 5.025 0 0 1 14.25 8.84V6.75c0-2.64-1.96-4.824-4.5-5.19V.75a.75.75 0 1 0-1.5 0v.81c-2.54.366-4.5 2.55-4.5 5.19v2.091c0 1.484-.65 2.885-1.792 3.85a1.312 1.312 0 0 0 .854 2.31h12.375a1.314 1.314 0 0 0 .847-2.317Z">
+                                    </path>
+                                    <path class="fill-current opacity-40"
+                                        d="M9 18a2.816 2.816 0 0 0 2.755-2.25H6.244A2.818 2.818 0 0 0 9 18Z"></path>
+                                </svg></button><button
+                                class="rizzui-action-icon-root inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-[1.8px] focus-visible:ring-offset-2 ring-offset-background transition-colors duration-200 p-1 rounded hover:text-primary focus-visible:ring-primary-lighter relative h-[34px] w-[34px] shadow backdrop-blur-md dark:bg-gray-100 md:h-9 md:w-9 max-sm:hidden"
+                                type="button" aria-label="Settings"><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 256 256" font-size="x-large"
+                                    class="text-amber-500 hover:text-amber-600 transition-colors duration-100 ease-in-out"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M184,128a56,56,0,1,1-56-56A56,56,0,0,1,184,128Z" opacity="0.2"></path>
+                                    <path
+                                        d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z">
+                                    </path>
+                                </svg></button><button
+                                class="relative w-9 shrink-0 rounded-full outline-none focus-visible:ring-[1.5px] focus-visible:ring-gray-400 focus-visible:ring-offset-2 active:translate-y-px sm:w-10"><img
+                                    alt="puharocuhou2" loading="lazy" width="40" height="40" decoding="async"
+                                    data-nimg="1"
+                                    class="aspect-square !h-9 !w-9 overflow-hidden rounded-full sm:!h-10 sm:!w-10"
+                                    srcset="./_next/image?url=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fp.png%3Fssl%3D1&amp;w=48&amp;q=75 1x, ./_next/image?url=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fp.png%3Fssl%3D1&amp;w=96&amp;q=75 2x"
+                                    src="./_next/image?url=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fp.png%3Fssl%3D1&amp;w=96&amp;q=75"
+                                    style="color: transparent;"></button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div
+                class="flex flex-grow flex-col px-4 pb-6 pt-2 md:px-5 lg:px-6 lg:pb-8 3xl:px-8 3xl:pt-4 4xl:px-10 4xl:pb-9">
+                <header class="mb-6 @container xs:-mt-2 lg:mb-7">
+                    <div class="flex flex-col @lg:flex-row @lg:items-center @lg:justify-between">
+                        <div>
+                            <h2 class="rizzui-title-h2 font-bold mb-2 text-[22px] lg:text-2xl 4xl:text-[26px]">Deploy
+                                multiple machine</h2>
+                            <div class="inline-flex items-center gap-2.5 flex-wrap"><a role="button"
+                                    class="inline-flex items-center gap-2 text-sm text-gray-700 last:text-gray-500 font-medium last:pointer-events-none"
+                                    href="/workspace">Workspace</a><span
+                                    class="h-1 w-1 rounded-full bg-gray-300"></span><a role="button"
+                                    class="inline-flex items-center gap-2 text-sm text-gray-700 last:text-gray-500 font-medium last:pointer-events-none"
+                                    href="#">Deploy Multiple Machine</a></div>
+                            <div class="mt-5">
+                                <p class="rizzui-text-p font-normal text-md text-gray-700">Create a new machine group by
+                                    providing the required information</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2"><button
+                                class="rizzui-button inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-[1.8px] focus-visible:ring-offset-2 ring-offset-background transition-colors duration-200 px-4 py-2 text-sm h-10 rounded-md bg-transparent border border-muted dark:backdrop-blur focus-visible:ring-muted hover:text-primary hover:border-primary font-bold"
+                                type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-help me-2 h-4 w-4">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <path d="M12 17h.01"></path>
+                                </svg>Request cluster definition</button><button
+                                class="rizzui-button inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-[1.8px] focus-visible:ring-offset-2 ring-offset-background transition-colors duration-200 px-4 py-2 text-sm h-10 rounded-md border border-transparent dark:backdrop-blur bg-primary hover:bg-primary-dark dark:hover:bg-primary/90 focus-visible:ring-muted text-primary-foreground font-bold"
+                                type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-album me-2 h-4 w-4">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                                    <polyline points="11 3 11 11 14 8 17 11 17 3"></polyline>
+                                </svg>Documents</button></div>
+                    </div>
+                </header>
+                <div class="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"><a
+                        class="relative col-span-1 grid aspect-square h-full rounded border border-muted p-4 transition-transform duration-200 ease-in-out hover:-translate-y-0.5 hover:border-primary hover:bg-indigo-50/10"
+                        href="/workspace/deploy-machine/multiple/default">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    width="65" height="65">
+                                    <path fill="#929292"
+                                        d="M21 1.25h-6c-.97 0-1.75.78-1.75 1.75v6c0 .97.78 1.75 1.75 1.75h6c.97 0 1.75-.78 1.75-1.75V3c0-.97-.78-1.75-1.75-1.75ZM22.74 16.77l-3.5-3.5a1.75 1.75 0 0 0-2.47 0l-3.5 3.5a1.75 1.75 0 0 0 0 2.47l3.5 3.5a1.75 1.75 0 0 0 2.47 0l3.5-3.5a1.75 1.75 0 0 0 0-2.47ZM9 1.25H3c-.97 0-1.75.78-1.75 1.75v6c0 .97.78 1.75 1.75 1.75h6c.97 0 1.75-.78 1.75-1.75V3c0-.97-.78-1.75-1.75-1.75ZM9 13.25H3c-.97 0-1.75.78-1.75 1.75v6c0 .97.78 1.75 1.75 1.75h6c.97 0 1.75-.78 1.75-1.75v-6c0-.97-.78-1.75-1.75-1.75Z">
+                                    </path>
+                                </svg></div>
+                            <div class="opt-title flex flex-col gap-2 text-center">
+                                <h6 class="rizzui-title-h6 font-lexend text-sm font-bold">Deploy machine group</h6>
+                                <p class="rizzui-text-p font-normal">Machine group doesn't distinguish between servers
+                                    and clients</p>
+                            </div>
+                        </div>
+                    </a><a
+                        class="relative col-span-1 grid aspect-square h-full rounded border border-muted p-4 transition-transform duration-200 ease-in-out hover:-translate-y-0.5 hover:border-primary hover:bg-indigo-50/10"
+                        href="/workspace/deploy-machine/multiple/aws-deadline">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2"><img alt="Cluster" loading="lazy" width="65" height="65" decoding="async"
+                                    data-nimg="1" class="rounded"
+                                    srcset="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Faws-thinkbox-deadline.jpeg&amp;w=96&amp;q=75 1x, ./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Faws-thinkbox-deadline.jpeg&amp;w=256&amp;q=75 2x"
+                                    src="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Faws-thinkbox-deadline.jpeg&amp;w=256&amp;q=75"
+                                    style="color: transparent;"></div>
+                            <div class="opt-title flex flex-col gap-2 text-center">
+                                <h6 class="rizzui-title-h6 font-lexend text-sm font-bold">AWS Deadline</h6>
+                                <p class="rizzui-text-p font-normal">AWS ThinkBox Deadline cluster</p>
+                            </div>
+                        </div>
+                    </a><a
+                        class="relative col-span-1 grid aspect-square h-full rounded border border-muted p-4 transition-transform duration-200 ease-in-out hover:-translate-y-0.5 hover:border-primary hover:bg-indigo-50/10 pointer-events-none"
+                        href="/workspace/deploy-machine/multiple/aws-deadline">
+                        <div
+                            class="absolute right-[13px] top-[-12px] rounded-xl border border-muted p-1 px-2 backdrop-blur-sm bg-gray-300 text-gray-500">
+                            <p class="rizzui-text-p text-xs font-bold">Coming soon</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2"><img alt="Cluster" loading="lazy" width="65" height="65" decoding="async"
+                                    data-nimg="1" class="rounded"
+                                    srcset="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fvray.png&amp;w=96&amp;q=75 1x, ./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fvray.png&amp;w=256&amp;q=75 2x"
+                                    src="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fvray.png&amp;w=256&amp;q=75"
+                                    style="color: transparent;"></div>
+                            <div class="opt-title flex flex-col gap-2 text-center">
+                                <h6 class="rizzui-title-h6 font-lexend text-sm font-bold">V-Ray Spawner</h6>
+                                <p class="rizzui-text-p font-normal">V-Ray Spawner cluster</p>
+                            </div>
+                        </div>
+                    </a><a
+                        class="relative col-span-1 grid aspect-square h-full rounded border border-muted p-4 transition-transform duration-200 ease-in-out hover:-translate-y-0.5 hover:border-primary hover:bg-indigo-50/10 pointer-events-none"
+                        href="/workspace/deploy-machine/multiple/aws-deadline">
+                        <div
+                            class="absolute right-[13px] top-[-12px] rounded-xl border border-muted p-1 px-2 backdrop-blur-sm bg-gray-300 text-gray-500">
+                            <p class="rizzui-text-p text-xs font-bold">Coming soon</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2"><img alt="Cluster" loading="lazy" width="65" height="65" decoding="async"
+                                    data-nimg="1" class="rounded"
+                                    srcset="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fpulze.png&amp;w=96&amp;q=75 1x, ./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fpulze.png&amp;w=256&amp;q=75 2x"
+                                    src="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fpulze.png&amp;w=256&amp;q=75"
+                                    style="color: transparent;"></div>
+                            <div class="opt-title flex flex-col gap-2 text-center">
+                                <h6 class="rizzui-title-h6 font-lexend text-sm font-bold">Pulze Render Manager</h6>
+                                <p class="rizzui-text-p font-normal">The most convenient Render Management Solution</p>
+                            </div>
+                        </div>
+                    </a><a
+                        class="relative col-span-1 grid aspect-square h-full rounded border border-muted p-4 transition-transform duration-200 ease-in-out hover:-translate-y-0.5 hover:border-primary hover:bg-indigo-50/10 pointer-events-none"
+                        href="/workspace/deploy-machine/multiple/aws-deadline">
+                        <div
+                            class="absolute right-[13px] top-[-12px] rounded-xl border border-muted p-1 px-2 backdrop-blur-sm bg-gray-300 text-gray-500">
+                            <p class="rizzui-text-p text-xs font-bold">Coming soon</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2"><img alt="Cluster" loading="lazy" width="65" height="65" decoding="async"
+                                    data-nimg="1" class="rounded"
+                                    srcset="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fblender.png&amp;w=96&amp;q=75 1x, ./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fblender.png&amp;w=256&amp;q=75 2x"
+                                    src="./_next/image?url=https%3A%2F%2Fstatics.superrendersfarm.com%2Fpcrental-assets%2Fimages%2Fblender.png&amp;w=256&amp;q=75"
+                                    style="color: transparent;"></div>
+                            <div class="opt-title flex flex-col gap-2 text-center">
+                                <h6 class="rizzui-title-h6 font-lexend text-sm font-bold">Blender Flamenco</h6>
+                                <p class="rizzui-text-p font-normal">Free &amp; Open source Render Management</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="mt-14">
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                                <h5 class="rizzui-title-h5 text-lg font-bold">Frequently ask questions</h5>
+                            </div>
+                            <p class="rizzui-text-p font-normal text-gray-700">Frequently asked questions about the
+                                cluster deployment process, and how to use the cluster.</p>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-col gap-3"><b class="rizzui-text-b font-bold text-gray-700">What is a
+                                    blank cluster?</b>
+                                <div class="flex gap-2 items-center pl-5">
+                                    <p>A blank cluster a group of machines that they are has same configuration and they
+                                        are connected to each other.</p>
+                                </div>
+                                <div class="flex gap-2 items-center pl-5">
+                                    <p>A blank cluster a group of machines that they are has same configuration and they
+                                        are connected to each other.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div><span
+        id="recharts_measurement_span" aria-hidden="true"
+        style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border: none; white-space: pre;">5</span>
+</body>
+
+</html>
